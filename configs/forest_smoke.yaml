@@ -1,0 +1,64 @@
+# ============================================================================
+# Ultralytics 数据集配置 —— 双类别烟雾 / 火焰检测（nc=2, names: [smoke, fire]）
+# ============================================================================
+# 路径策略：
+#   本文件只写【相对于项目根目录】的路径，不写死 Windows 绝对路径（禁止盘符路径）。
+#   阶段六 train.py / 阶段八 evaluate.py 会通过 src/paths.py 把这些相对路径
+#   解析成绝对路径后再传给 Ultralytics。
+#
+#   为什么不直接把绝对路径写进 yaml：Ultralytics 对相对 path 的解析基准是它自己的
+#   datasets_dir 设置（默认工作目录下的 datasets/），与“相对本 yaml 文件”不同，
+#   容易造成路径错位。因此由项目代码显式解析，避免依赖 Ultralytics 的默认行为。
+# ----------------------------------------------------------------------------
+
+# 数据集根目录（相对项目根）
+path: datasets/forest_smoke
+
+# 三个划分的图片目录（相对 path）
+train: images/train
+val: images/val
+test: images/test
+
+# 标签目录由 Ultralytics 按约定自动推导：
+#   images/train/xxx.jpg  ->  labels/train/xxx.txt
+# 因此本文件不单独声明 labels 路径。
+
+# ---------- 类别定义 ----------
+# 0 = smoke（烟雾），1 = fire（火焰）。
+# 顺序必须与原始数据集一致（已实地抽查标签确认：0 是 smoke，1 是 fire）。
+nc: 2
+names: [smoke, fire]
+
+# ---------- 数据集来源登记（真实值，来自实际下载与校验）----------
+# 这些是登记信息，不是 Ultralytics 参数；本项目报告脚本（阶段五/八）会读取，
+# 保证论文里的数据来源可追溯。
+dataset_meta:
+  name: D-Fire（Kaggle 镜像 sayedgamal99/smoke-fire-detection-yolo）
+  source_url: https://www.kaggle.com/datasets/sayedgamal99/smoke-fire-detection-yolo
+  license: "CC0: Public Domain"   # 含冒号，必须加引号，否则 YAML 解析失败
+  license_notes: >-
+    平台许可字段为 CC0。原始 D-Fire 中文件名以 PublicDataset 开头的图片来自
+    HPWREN / FESB / FireNet 等第三方提供方，其原始条款未逐一核实，仅作课程研究使用。
+  version_or_commit: v1（Kaggle lastUpdated 2025-01-27）
+  acquired_at: "2026-10-27T01:51:04+08:00"
+  archive_filename: smoke-fire-detection-yolo.zip
+  archive_bytes: 3049605157
+  archive_sha256: 65d81b602991261b47ddc71281e99108362a30336a448e1f8d21352c825c6d83
+  extracted_files: 43055
+  extracted_bytes: 3118334483
+  scene_note: >-
+    D-Fire 为野外/林区监控画面与网络收集图像的合集，含城市、工业等非森林场景，
+    不是纯森林数据集；论文中不得表述为“森林专用数据集”。
+
+# ---------- 划分规则（已定，改动必须重新记录并重跑全部实验）----------
+# 任务书要求 70/15/15，且同一视频 / 同一事件的图片不得跨集合。
+split_meta:
+  ratio:
+    train: 0.7
+    val: 0.15
+    test: 0.15
+  seed: 42
+  unit: group
+  group_key_source: null   # 由 src/prepare_dataset.py 写入 outputs/reports/split_manifest.json
+  grouping_approximate: null
+  leakage_risk_note: null

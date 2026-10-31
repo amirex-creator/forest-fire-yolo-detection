@@ -1,0 +1,21 @@
+# Fine-tune the 30-epoch checkpoint on the original training set plus mined negatives.
+model: yolov8n.pt
+pretrained: true
+data: configs/forest_smoke_hard_negatives_full.yaml
+epochs: 10
+imgsz: 640
+batch: 8
+workers: 1
+patience: 10
+seed: 0
+deterministic: true
+amp: true
+cache: false
+device: 0
+project: outputs/train_runs
+name: hardneg_finetune_10
+exist_ok: false
+lr0: 0.001
+lrf: 0.01
+warmup_epochs: 0.5
+close_mosaic: 2

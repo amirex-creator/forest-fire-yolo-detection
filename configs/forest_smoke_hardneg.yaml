@@ -1,0 +1,6 @@
+path: datasets/forest_smoke
+train: ../hard_negatives/train_manifest.txt
+val: images/val
+test: images/test
+nc: 2
+names: [smoke, fire]
