@@ -1,0 +1,9 @@
+# Copy this file to the cloudflared config directory only after login.
+# Replace the placeholders with values created by Cloudflare.
+tunnel: <TUNNEL_UUID>
+credentials-file: C:\Users\<USERNAME>\.cloudflared\<TUNNEL_UUID>.json
+
+ingress:
+  - hostname: forest-smoke.example.com
+    service: http://127.0.0.1:8501
+  - service: http_status:404
