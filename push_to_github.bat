@@ -17,6 +17,18 @@ git config http.proxy http://127.0.0.1:7897
 git config https.proxy http://127.0.0.1:7897
 git config http.sslBackend openssl
 
+git ls-remote --exit-code origin refs/heads/main >nul 2>nul
+if not errorlevel 1 (
+  echo.
+  echo The remote main branch already contains the uploaded project.
+  echo This local checkout has a separate history because the first upload
+  echo was completed through the GitHub web interface.
+  echo Do not force-push this checkout. Reconcile the histories first, then
+  echo run git push manually after reviewing the result.
+  pause
+  exit /b 2
+)
+
 git push -u origin main
 if errorlevel 1 (
   echo.
