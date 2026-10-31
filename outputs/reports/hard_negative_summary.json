@@ -1,0 +1,322 @@
+{
+  "generated_at": "2026-10-29T01:07:03+08:00",
+  "baseline_weights": "models\\batch3_complete_30_full_20261029_003055_best.pt",
+  "source_split": "train only, empty-label images",
+  "candidate_limit": 0,
+  "candidate_pool": 6491,
+  "scanned": 6491,
+  "selected": 148,
+  "min_conf": 0.25,
+  "inference_batch": 1,
+  "seed": 42,
+  "selected_source_prefix_counts": {
+    "AoF": 97,
+    "PublicDataset": 3,
+    "WEB": 53
+  },
+  "manifest": "datasets/hard_negatives_full/train_manifest.txt",
+  "data_config": "configs/forest_smoke_hard_negatives_full.yaml",
+  "examples": [
+    {
+      "source": "datasets/forest_smoke/images/train/AoF00209.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00000.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.290496
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF03909.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00001.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.466409
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB00156.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00002.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.390046
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF07622.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00003.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.362273
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF01309.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00004.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.368152
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB00382.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00005.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.466427
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF03758.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00006.jpg",
+      "predicted_boxes": 2,
+      "max_conf": 0.528543
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB02774.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00007.jpg",
+      "predicted_boxes": 2,
+      "max_conf": 0.628919
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF07571.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00008.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.280194
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF01370.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00009.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.470449
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB02467.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00010.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.345906
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF01049.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00011.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.301724
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB10098.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00012.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.2671
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF01884.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00013.jpg",
+      "predicted_boxes": 2,
+      "max_conf": 0.384792
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF01883.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00014.jpg",
+      "predicted_boxes": 2,
+      "max_conf": 0.372315
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/PublicDataset01286.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00015.jpg",
+      "predicted_boxes": 2,
+      "max_conf": 0.397442
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF01464.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00016.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.330631
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF01369.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00017.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.309103
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB01278.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00018.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.363995
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF03581.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00019.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.315741
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB02219.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00020.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.553439
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB10157.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00021.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.333087
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB02159.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00022.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.324904
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF00208.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00023.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.464691
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB02828.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00024.jpg",
+      "predicted_boxes": 2,
+      "max_conf": 0.312315
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF01047.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00025.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.263917
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB03047.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00026.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.251554
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF06976.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00027.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.322966
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB02685.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00028.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.349961
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF07304.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00029.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.330539
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF01881.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00030.jpg",
+      "predicted_boxes": 2,
+      "max_conf": 0.348451
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB02423.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00031.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.34786
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF01379.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00032.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.414015
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB03133.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00033.jpg",
+      "predicted_boxes": 2,
+      "max_conf": 0.392579
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF01073.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00034.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.374379
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF07490.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00035.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.320834
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF01336.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00036.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.448128
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB03246.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00037.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.355425
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB02593.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00038.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.25813
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF01337.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00039.jpg",
+      "predicted_boxes": 2,
+      "max_conf": 0.333665
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB03134.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00040.jpg",
+      "predicted_boxes": 2,
+      "max_conf": 0.510829
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF01348.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00041.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.269636
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF07520.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00042.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.265048
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF02247.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00043.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.293954
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB10284.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00044.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.255613
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF07307.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00045.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.271532
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB10399.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00046.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.329834
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/PublicDataset00924.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00047.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.361484
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/AoF01082.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00048.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.263561
+    },
+    {
+      "source": "datasets/forest_smoke/images/train/WEB03386.jpg",
+      "copy": "datasets/hard_negatives_full/images/hn_00049.jpg",
+      "predicted_boxes": 1,
+      "max_conf": 0.629013
+    }
+  ],
+  "note": "Selected images retain empty YOLO labels and are never taken from val/test."
+}

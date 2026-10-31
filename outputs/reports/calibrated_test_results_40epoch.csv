@@ -1,0 +1,2 @@
+﻿model,threshold,val_precision,val_recall,val_f1,test_precision,test_recall,test_f1,negative_images,negative_images_flagged,negative_image_false_alarm_rate,negative_fp_boxes
+hardneg_finetune_cont30_full_20261029_034435_best.pt,0.3,0.738707,0.627694,0.678691,0.708861,0.592058,0.645216,1645,89,0.054103,97

@@ -1,0 +1,2 @@
+﻿model,negative_images,images_with_false_alarm,image_false_alarm_rate,false_positive_boxes,conf
+hardneg_finetune_cont30_full_20261029_034435_best.pt,1645,89,0.054103,97,0.3

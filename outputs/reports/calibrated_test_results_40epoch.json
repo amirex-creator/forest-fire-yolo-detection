@@ -1,0 +1,2535 @@
+{
+  "generated_at": "2026-10-29T04:24:50+08:00",
+  "method": "Maximum micro F1 over the supplied confidence grid on val; tie-break by precision then higher confidence. Predictions use the recorded NMS IoU. The selected confidence threshold is applied unchanged to test.",
+  "models": [
+    {
+      "weights": "models/hardneg_finetune_cont30_full_20261029_034435_best.pt",
+      "weights_sha256": "6c959cfd4ef8309d07c1ee311ec6e5488817a8827d66a5615f8c370077f64159",
+      "validation": {
+        "images": 3229,
+        "objects": 3387,
+        "iou_threshold": 0.5,
+        "nms_iou": 0.7,
+        "infer_conf_floor": 0.001,
+        "threshold_sweep": [
+          {
+            "threshold": 0.05,
+            "tp": 2782,
+            "fp": 5588,
+            "fn": 605,
+            "negative_images": 1702,
+            "negative_images_flagged": 234,
+            "negative_fp_boxes": 379,
+            "precision": 0.332378,
+            "recall": 0.821376,
+            "f1": 0.47325,
+            "negative_image_false_alarm_rate": 0.137485,
+            "per_class": {
+              "smoke": {
+                "tp": 1333,
+                "fp": 2143,
+                "fn": 263
+              },
+              "fire": {
+                "tp": 1449,
+                "fp": 3445,
+                "fn": 342
+              }
+            }
+          },
+          {
+            "threshold": 0.1,
+            "tp": 2628,
+            "fp": 3061,
+            "fn": 759,
+            "negative_images": 1702,
+            "negative_images_flagged": 128,
+            "negative_fp_boxes": 180,
+            "precision": 0.461944,
+            "recall": 0.775908,
+            "f1": 0.57911,
+            "negative_image_false_alarm_rate": 0.075206,
+            "per_class": {
+              "smoke": {
+                "tp": 1279,
+                "fp": 1162,
+                "fn": 317
+              },
+              "fire": {
+                "tp": 1349,
+                "fp": 1899,
+                "fn": 442
+              }
+            }
+          },
+          {
+            "threshold": 0.15,
+            "tp": 2498,
+            "fp": 2002,
+            "fn": 889,
+            "negative_images": 1702,
+            "negative_images_flagged": 88,
+            "negative_fp_boxes": 116,
+            "precision": 0.555111,
+            "recall": 0.737526,
+            "f1": 0.633447,
+            "negative_image_false_alarm_rate": 0.051704,
+            "per_class": {
+              "smoke": {
+                "tp": 1239,
+                "fp": 765,
+                "fn": 357
+              },
+              "fire": {
+                "tp": 1259,
+                "fp": 1237,
+                "fn": 532
+              }
+            }
+          },
+          {
+            "threshold": 0.2,
+            "tp": 2374,
+            "fp": 1417,
+            "fn": 1013,
+            "negative_images": 1702,
+            "negative_images_flagged": 68,
+            "negative_fp_boxes": 83,
+            "precision": 0.62622,
+            "recall": 0.700915,
+            "f1": 0.661466,
+            "negative_image_false_alarm_rate": 0.039953,
+            "per_class": {
+              "smoke": {
+                "tp": 1198,
+                "fp": 565,
+                "fn": 398
+              },
+              "fire": {
+                "tp": 1176,
+                "fp": 852,
+                "fn": 615
+              }
+            }
+          },
+          {
+            "threshold": 0.25,
+            "tp": 2249,
+            "fp": 1011,
+            "fn": 1138,
+            "negative_images": 1702,
+            "negative_images_flagged": 47,
+            "negative_fp_boxes": 56,
+            "precision": 0.689877,
+            "recall": 0.664009,
+            "f1": 0.676696,
+            "negative_image_false_alarm_rate": 0.027615,
+            "per_class": {
+              "smoke": {
+                "tp": 1163,
+                "fp": 430,
+                "fn": 433
+              },
+              "fire": {
+                "tp": 1086,
+                "fp": 581,
+                "fn": 705
+              }
+            }
+          },
+          {
+            "threshold": 0.3,
+            "tp": 2126,
+            "fp": 752,
+            "fn": 1261,
+            "negative_images": 1702,
+            "negative_images_flagged": 32,
+            "negative_fp_boxes": 36,
+            "precision": 0.738707,
+            "recall": 0.627694,
+            "f1": 0.678691,
+            "negative_image_false_alarm_rate": 0.018801,
+            "per_class": {
+              "smoke": {
+                "tp": 1112,
+                "fp": 326,
+                "fn": 484
+              },
+              "fire": {
+                "tp": 1014,
+                "fp": 426,
+                "fn": 777
+              }
+            }
+          },
+          {
+            "threshold": 0.35,
+            "tp": 1985,
+            "fp": 574,
+            "fn": 1402,
+            "negative_images": 1702,
+            "negative_images_flagged": 26,
+            "negative_fp_boxes": 28,
+            "precision": 0.775694,
+            "recall": 0.586064,
+            "f1": 0.667676,
+            "negative_image_false_alarm_rate": 0.015276,
+            "per_class": {
+              "smoke": {
+                "tp": 1066,
+                "fp": 256,
+                "fn": 530
+              },
+              "fire": {
+                "tp": 919,
+                "fp": 318,
+                "fn": 872
+              }
+            }
+          },
+          {
+            "threshold": 0.4,
+            "tp": 1864,
+            "fp": 430,
+            "fn": 1523,
+            "negative_images": 1702,
+            "negative_images_flagged": 22,
+            "negative_fp_boxes": 23,
+            "precision": 0.812554,
+            "recall": 0.55034,
+            "f1": 0.656222,
+            "negative_image_false_alarm_rate": 0.012926,
+            "per_class": {
+              "smoke": {
+                "tp": 1019,
+                "fp": 185,
+                "fn": 577
+              },
+              "fire": {
+                "tp": 845,
+                "fp": 245,
+                "fn": 946
+              }
+            }
+          },
+          {
+            "threshold": 0.45,
+            "tp": 1717,
+            "fp": 325,
+            "fn": 1670,
+            "negative_images": 1702,
+            "negative_images_flagged": 16,
+            "negative_fp_boxes": 17,
+            "precision": 0.840842,
+            "recall": 0.506938,
+            "f1": 0.632529,
+            "negative_image_false_alarm_rate": 0.009401,
+            "per_class": {
+              "smoke": {
+                "tp": 970,
+                "fp": 136,
+                "fn": 626
+              },
+              "fire": {
+                "tp": 747,
+                "fp": 189,
+                "fn": 1044
+              }
+            }
+          },
+          {
+            "threshold": 0.5,
+            "tp": 1567,
+            "fp": 249,
+            "fn": 1820,
+            "negative_images": 1702,
+            "negative_images_flagged": 14,
+            "negative_fp_boxes": 15,
+            "precision": 0.862885,
+            "recall": 0.462651,
+            "f1": 0.602345,
+            "negative_image_false_alarm_rate": 0.008226,
+            "per_class": {
+              "smoke": {
+                "tp": 907,
+                "fp": 112,
+                "fn": 689
+              },
+              "fire": {
+                "tp": 660,
+                "fp": 137,
+                "fn": 1131
+              }
+            }
+          },
+          {
+            "threshold": 0.55,
+            "tp": 1398,
+            "fp": 182,
+            "fn": 1989,
+            "negative_images": 1702,
+            "negative_images_flagged": 9,
+            "negative_fp_boxes": 9,
+            "precision": 0.88481,
+            "recall": 0.412755,
+            "f1": 0.562915,
+            "negative_image_false_alarm_rate": 0.005288,
+            "per_class": {
+              "smoke": {
+                "tp": 826,
+                "fp": 88,
+                "fn": 770
+              },
+              "fire": {
+                "tp": 572,
+                "fp": 94,
+                "fn": 1219
+              }
+            }
+          },
+          {
+            "threshold": 0.6,
+            "tp": 1247,
+            "fp": 126,
+            "fn": 2140,
+            "negative_images": 1702,
+            "negative_images_flagged": 5,
+            "negative_fp_boxes": 5,
+            "precision": 0.90823,
+            "recall": 0.368172,
+            "f1": 0.52395,
+            "negative_image_false_alarm_rate": 0.002938,
+            "per_class": {
+              "smoke": {
+                "tp": 764,
+                "fp": 71,
+                "fn": 832
+              },
+              "fire": {
+                "tp": 483,
+                "fp": 55,
+                "fn": 1308
+              }
+            }
+          },
+          {
+            "threshold": 0.65,
+            "tp": 1098,
+            "fp": 85,
+            "fn": 2289,
+            "negative_images": 1702,
+            "negative_images_flagged": 2,
+            "negative_fp_boxes": 2,
+            "precision": 0.928149,
+            "recall": 0.324181,
+            "f1": 0.480525,
+            "negative_image_false_alarm_rate": 0.001175,
+            "per_class": {
+              "smoke": {
+                "tp": 687,
+                "fp": 50,
+                "fn": 909
+              },
+              "fire": {
+                "tp": 411,
+                "fp": 35,
+                "fn": 1380
+              }
+            }
+          },
+          {
+            "threshold": 0.7,
+            "tp": 913,
+            "fp": 50,
+            "fn": 2474,
+            "negative_images": 1702,
+            "negative_images_flagged": 2,
+            "negative_fp_boxes": 2,
+            "precision": 0.948079,
+            "recall": 0.26956,
+            "f1": 0.41977,
+            "negative_image_false_alarm_rate": 0.001175,
+            "per_class": {
+              "smoke": {
+                "tp": 589,
+                "fp": 36,
+                "fn": 1007
+              },
+              "fire": {
+                "tp": 324,
+                "fp": 14,
+                "fn": 1467
+              }
+            }
+          },
+          {
+            "threshold": 0.75,
+            "tp": 713,
+            "fp": 26,
+            "fn": 2674,
+            "negative_images": 1702,
+            "negative_images_flagged": 0,
+            "negative_fp_boxes": 0,
+            "precision": 0.964817,
+            "recall": 0.210511,
+            "f1": 0.345613,
+            "negative_image_false_alarm_rate": 0.0,
+            "per_class": {
+              "smoke": {
+                "tp": 463,
+                "fp": 22,
+                "fn": 1133
+              },
+              "fire": {
+                "tp": 250,
+                "fp": 4,
+                "fn": 1541
+              }
+            }
+          },
+          {
+            "threshold": 0.8,
+            "tp": 447,
+            "fp": 9,
+            "fn": 2940,
+            "negative_images": 1702,
+            "negative_images_flagged": 0,
+            "negative_fp_boxes": 0,
+            "precision": 0.980263,
+            "recall": 0.131975,
+            "f1": 0.232631,
+            "negative_image_false_alarm_rate": 0.0,
+            "per_class": {
+              "smoke": {
+                "tp": 281,
+                "fp": 8,
+                "fn": 1315
+              },
+              "fire": {
+                "tp": 166,
+                "fp": 1,
+                "fn": 1625
+              }
+            }
+          }
+        ],
+        "selected_threshold": 0.3,
+        "selected_metrics": {
+          "tp": 2126,
+          "fp": 752,
+          "fn": 1261,
+          "negative_images": 1702,
+          "negative_images_flagged": 32,
+          "negative_fp_boxes": 36,
+          "precision": 0.738707,
+          "recall": 0.627694,
+          "f1": 0.678691,
+          "negative_image_false_alarm_rate": 0.018801,
+          "per_class": {
+            "smoke": {
+              "tp": 1112,
+              "fp": 326,
+              "fn": 484
+            },
+            "fire": {
+              "tp": 1014,
+              "fp": 426,
+              "fn": 777
+            }
+          },
+          "negative_false_alarm_examples": [
+            {
+              "image": "WEB10099.jpg",
+              "max_confidence": 0.736693,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.736693,
+                  "box_xyxy": [
+                    0.0,
+                    3.1,
+                    399.9,
+                    131.0
+                  ]
+                },
+                {
+                  "class_name": "fire",
+                  "confidence": 0.324013,
+                  "box_xyxy": [
+                    209.3,
+                    116.5,
+                    218.0,
+                    128.8
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB00381.jpg",
+              "max_confidence": 0.731584,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.731584,
+                  "box_xyxy": [
+                    1.4,
+                    1.1,
+                    478.9,
+                    357.9
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB01268.jpg",
+              "max_confidence": 0.626775,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.626775,
+                  "box_xyxy": [
+                    8.4,
+                    21.2,
+                    375.0,
+                    256.7
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB00411.jpg",
+              "max_confidence": 0.622861,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.622861,
+                  "box_xyxy": [
+                    0.0,
+                    1.7,
+                    478.3,
+                    357.7
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB01269.jpg",
+              "max_confidence": 0.621033,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.621033,
+                  "box_xyxy": [
+                    0.6,
+                    12.7,
+                    363.0,
+                    259.0
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB09926.jpg",
+              "max_confidence": 0.579449,
+              "detections": [
+                {
+                  "class_name": "fire",
+                  "confidence": 0.579449,
+                  "box_xyxy": [
+                    117.3,
+                    136.8,
+                    157.9,
+                    195.7
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB03474.jpg",
+              "max_confidence": 0.576066,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.576066,
+                  "box_xyxy": [
+                    167.7,
+                    334.8,
+                    408.2,
+                    591.5
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB01270.jpg",
+              "max_confidence": 0.573867,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.573867,
+                  "box_xyxy": [
+                    0.0,
+                    11.1,
+                    338.8,
+                    244.7
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB10100.jpg",
+              "max_confidence": 0.565702,
+              "detections": [
+                {
+                  "class_name": "fire",
+                  "confidence": 0.565702,
+                  "box_xyxy": [
+                    293.4,
+                    161.8,
+                    366.4,
+                    193.5
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "PublicDataset01290.jpg",
+              "max_confidence": 0.544011,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.544011,
+                  "box_xyxy": [
+                    346.8,
+                    136.3,
+                    467.0,
+                    270.4
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB00360.jpg",
+              "max_confidence": 0.540192,
+              "detections": [
+                {
+                  "class_name": "fire",
+                  "confidence": 0.540192,
+                  "box_xyxy": [
+                    245.8,
+                    183.5,
+                    288.8,
+                    207.4
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB03107.jpg",
+              "max_confidence": 0.512209,
+              "detections": [
+                {
+                  "class_name": "fire",
+                  "confidence": 0.512209,
+                  "box_xyxy": [
+                    3.1,
+                    167.6,
+                    65.2,
+                    189.0
+                  ]
+                },
+                {
+                  "class_name": "fire",
+                  "confidence": 0.509172,
+                  "box_xyxy": [
+                    89.2,
+                    195.3,
+                    194.6,
+                    225.5
+                  ]
+                },
+                {
+                  "class_name": "fire",
+                  "confidence": 0.306458,
+                  "box_xyxy": [
+                    0.5,
+                    167.2,
+                    81.1,
+                    193.7
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "PublicDataset01303.jpg",
+              "max_confidence": 0.509636,
+              "detections": [
+                {
+                  "class_name": "fire",
+                  "confidence": 0.509636,
+                  "box_xyxy": [
+                    3.3,
+                    247.9,
+                    174.4,
+                    390.6
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "AoF00275.jpg",
+              "max_confidence": 0.502607,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.502607,
+                  "box_xyxy": [
+                    107.1,
+                    68.9,
+                    174.6,
+                    110.1
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB00252.jpg",
+              "max_confidence": 0.4919,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.4919,
+                  "box_xyxy": [
+                    279.1,
+                    144.4,
+                    394.0,
+                    202.8
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB10109.jpg",
+              "max_confidence": 0.468623,
+              "detections": [
+                {
+                  "class_name": "fire",
+                  "confidence": 0.468623,
+                  "box_xyxy": [
+                    780.4,
+                    185.9,
+                    822.2,
+                    236.4
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB10086.jpg",
+              "max_confidence": 0.440636,
+              "detections": [
+                {
+                  "class_name": "fire",
+                  "confidence": 0.440636,
+                  "box_xyxy": [
+                    703.7,
+                    282.9,
+                    750.5,
+                    306.8
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB01267.jpg",
+              "max_confidence": 0.434923,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.434923,
+                  "box_xyxy": [
+                    2.0,
+                    19.7,
+                    405.2,
+                    264.5
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB01757.jpg",
+              "max_confidence": 0.41267,
+              "detections": [
+                {
+                  "class_name": "fire",
+                  "confidence": 0.41267,
+                  "box_xyxy": [
+                    318.6,
+                    254.7,
+                    349.0,
+                    275.3
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB00383.jpg",
+              "max_confidence": 0.40944,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.40944,
+                  "box_xyxy": [
+                    76.3,
+                    161.3,
+                    215.2,
+                    246.0
+                  ]
+                },
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.368719,
+                  "box_xyxy": [
+                    331.8,
+                    1.5,
+                    479.8,
+                    264.9
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB01699.jpg",
+              "max_confidence": 0.406405,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.406405,
+                  "box_xyxy": [
+                    365.8,
+                    231.0,
+                    448.3,
+                    271.1
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "AoF00747.jpg",
+              "max_confidence": 0.40349,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.40349,
+                  "box_xyxy": [
+                    1167.0,
+                    147.4,
+                    1195.0,
+                    167.3
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "AoF00748.jpg",
+              "max_confidence": 0.399046,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.399046,
+                  "box_xyxy": [
+                    1151.3,
+                    145.8,
+                    1187.5,
+                    167.3
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB01504.jpg",
+              "max_confidence": 0.366381,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.366381,
+                  "box_xyxy": [
+                    143.6,
+                    8.3,
+                    615.6,
+                    166.0
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "PublicDataset01298.jpg",
+              "max_confidence": 0.363101,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.363101,
+                  "box_xyxy": [
+                    786.3,
+                    73.9,
+                    868.8,
+                    109.8
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB01338.jpg",
+              "max_confidence": 0.356948,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.356948,
+                  "box_xyxy": [
+                    460.2,
+                    11.9,
+                    640.0,
+                    119.7
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "AoF01180.jpg",
+              "max_confidence": 0.346722,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.346722,
+                  "box_xyxy": [
+                    987.3,
+                    384.2,
+                    1012.1,
+                    414.0
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB10398.jpg",
+              "max_confidence": 0.338001,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.338001,
+                  "box_xyxy": [
+                    0.2,
+                    10.9,
+                    852.0,
+                    482.7
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB09861.jpg",
+              "max_confidence": 0.336158,
+              "detections": [
+                {
+                  "class_name": "fire",
+                  "confidence": 0.336158,
+                  "box_xyxy": [
+                    276.9,
+                    295.9,
+                    340.2,
+                    328.0
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "AoF00260.jpg",
+              "max_confidence": 0.314947,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.314947,
+                  "box_xyxy": [
+                    61.1,
+                    11.8,
+                    146.8,
+                    45.9
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB01503.jpg",
+              "max_confidence": 0.306521,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.306521,
+                  "box_xyxy": [
+                    223.0,
+                    10.0,
+                    632.3,
+                    174.1
+                  ]
+                }
+              ]
+            },
+            {
+              "image": "WEB10194.jpg",
+              "max_confidence": 0.300434,
+              "detections": [
+                {
+                  "class_name": "smoke",
+                  "confidence": 0.300434,
+                  "box_xyxy": [
+                    1.2,
+                    14.3,
+                    548.8,
+                    585.3
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "test": {
+        "images": 3229,
+        "objects": 3878,
+        "iou_threshold": 0.5,
+        "nms_iou": 0.7,
+        "confidence_threshold_from_validation": 0.3,
+        "tp": 2296,
+        "fp": 943,
+        "fn": 1582,
+        "negative_images": 1645,
+        "negative_images_flagged": 89,
+        "negative_fp_boxes": 97,
+        "precision": 0.708861,
+        "recall": 0.592058,
+        "f1": 0.645216,
+        "negative_image_false_alarm_rate": 0.054103,
+        "per_class": {
+          "smoke": {
+            "tp": 1145,
+            "fp": 364,
+            "fn": 543
+          },
+          "fire": {
+            "tp": 1151,
+            "fp": 579,
+            "fn": 1039
+          }
+        },
+        "negative_false_alarm_examples": [
+          {
+            "image": "AoF03310.jpg",
+            "max_confidence": 0.785872,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.785872,
+                "box_xyxy": [
+                  961.3,
+                  43.3,
+                  1164.3,
+                  165.5
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03309.jpg",
+            "max_confidence": 0.770761,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.770761,
+                "box_xyxy": [
+                  961.7,
+                  42.6,
+                  1167.1,
+                  167.1
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF07564.jpg",
+            "max_confidence": 0.768923,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.768923,
+                "box_xyxy": [
+                  958.2,
+                  47.0,
+                  1162.9,
+                  166.6
+                ]
+              }
+            ]
+          },
+          {
+            "image": "PublicDataset00875.jpg",
+            "max_confidence": 0.763571,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.763571,
+                "box_xyxy": [
+                  160.7,
+                  5.9,
+                  392.3,
+                  210.2
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03311.jpg",
+            "max_confidence": 0.761824,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.761824,
+                "box_xyxy": [
+                  958.2,
+                  44.9,
+                  1162.1,
+                  166.1
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF07587.jpg",
+            "max_confidence": 0.752762,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.752762,
+                "box_xyxy": [
+                  695.3,
+                  14.7,
+                  1096.5,
+                  363.4
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03304.jpg",
+            "max_confidence": 0.750815,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.750815,
+                "box_xyxy": [
+                  983.0,
+                  43.3,
+                  1181.3,
+                  166.3
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03303.jpg",
+            "max_confidence": 0.746219,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.746219,
+                "box_xyxy": [
+                  984.0,
+                  43.5,
+                  1177.7,
+                  165.6
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF07565.jpg",
+            "max_confidence": 0.736658,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.736658,
+                "box_xyxy": [
+                  951.9,
+                  45.9,
+                  1142.7,
+                  166.7
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF07566.jpg",
+            "max_confidence": 0.735756,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.735756,
+                "box_xyxy": [
+                  951.9,
+                  47.9,
+                  1145.6,
+                  167.1
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB02258.jpg",
+            "max_confidence": 0.735075,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.735075,
+                "box_xyxy": [
+                  252.0,
+                  204.1,
+                  541.3,
+                  447.3
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03302.jpg",
+            "max_confidence": 0.717944,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.717944,
+                "box_xyxy": [
+                  985.6,
+                  45.5,
+                  1180.6,
+                  165.4
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB01812.jpg",
+            "max_confidence": 0.696897,
+            "detections": [
+              {
+                "class_name": "fire",
+                "confidence": 0.696897,
+                "box_xyxy": [
+                  26.0,
+                  72.1,
+                  125.4,
+                  138.5
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03308.jpg",
+            "max_confidence": 0.69235,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.69235,
+                "box_xyxy": [
+                  971.6,
+                  41.5,
+                  1171.9,
+                  165.9
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03434.jpg",
+            "max_confidence": 0.690734,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.690734,
+                "box_xyxy": [
+                  685.2,
+                  10.0,
+                  1093.5,
+                  358.1
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB02477.jpg",
+            "max_confidence": 0.687127,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.687127,
+                "box_xyxy": [
+                  0.0,
+                  83.5,
+                  641.9,
+                  502.6
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF07563.jpg",
+            "max_confidence": 0.685064,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.685064,
+                "box_xyxy": [
+                  1003.9,
+                  50.6,
+                  1195.7,
+                  166.4
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03306.jpg",
+            "max_confidence": 0.67272,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.67272,
+                "box_xyxy": [
+                  973.0,
+                  39.0,
+                  1174.3,
+                  165.7
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03307.jpg",
+            "max_confidence": 0.67031,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.67031,
+                "box_xyxy": [
+                  974.3,
+                  40.7,
+                  1172.3,
+                  166.4
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF07562.jpg",
+            "max_confidence": 0.658705,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.658705,
+                "box_xyxy": [
+                  1003.4,
+                  50.8,
+                  1193.9,
+                  165.7
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB10418.jpg",
+            "max_confidence": 0.640033,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.640033,
+                "box_xyxy": [
+                  837.7,
+                  357.6,
+                  1136.8,
+                  577.4
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03435.jpg",
+            "max_confidence": 0.636458,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.636458,
+                "box_xyxy": [
+                  693.9,
+                  15.0,
+                  1094.4,
+                  357.5
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03433.jpg",
+            "max_confidence": 0.636301,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.636301,
+                "box_xyxy": [
+                  689.5,
+                  9.8,
+                  1096.7,
+                  338.4
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB02790.jpg",
+            "max_confidence": 0.631338,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.631338,
+                "box_xyxy": [
+                  262.5,
+                  465.5,
+                  401.4,
+                  558.1
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB10115.jpg",
+            "max_confidence": 0.613585,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.613585,
+                "box_xyxy": [
+                  0.0,
+                  0.0,
+                  840.2,
+                  531.2
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03300.jpg",
+            "max_confidence": 0.588449,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.588449,
+                "box_xyxy": [
+                  1008.5,
+                  55.1,
+                  1202.1,
+                  166.6
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03301.jpg",
+            "max_confidence": 0.58064,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.58064,
+                "box_xyxy": [
+                  1009.5,
+                  53.3,
+                  1195.1,
+                  164.7
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB02822.jpg",
+            "max_confidence": 0.577859,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.577859,
+                "box_xyxy": [
+                  745.6,
+                  805.2,
+                  1600.0,
+                  1200.0
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF06291.jpg",
+            "max_confidence": 0.550593,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.550593,
+                "box_xyxy": [
+                  939.9,
+                  174.7,
+                  995.4,
+                  223.8
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB09504.jpg",
+            "max_confidence": 0.540931,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.540931,
+                "box_xyxy": [
+                  0.0,
+                  6.6,
+                  639.5,
+                  344.7
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB02636.jpg",
+            "max_confidence": 0.535577,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.535577,
+                "box_xyxy": [
+                  32.6,
+                  0.0,
+                  638.4,
+                  640.0
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF02350.jpg",
+            "max_confidence": 0.520182,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.520182,
+                "box_xyxy": [
+                  981.7,
+                  127.6,
+                  1106.8,
+                  184.5
+                ]
+              }
+            ]
+          },
+          {
+            "image": "PublicDataset00914.jpg",
+            "max_confidence": 0.520074,
+            "detections": [
+              {
+                "class_name": "fire",
+                "confidence": 0.520074,
+                "box_xyxy": [
+                  274.5,
+                  136.3,
+                  329.0,
+                  167.6
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF00319.jpg",
+            "max_confidence": 0.518232,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.518232,
+                "box_xyxy": [
+                  0.0,
+                  31.1,
+                  341.9,
+                  250.3
+                ]
+              }
+            ]
+          },
+          {
+            "image": "PublicDataset00895.jpg",
+            "max_confidence": 0.509713,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.509713,
+                "box_xyxy": [
+                  406.3,
+                  6.7,
+                  798.9,
+                  182.1
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03319.jpg",
+            "max_confidence": 0.498208,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.498208,
+                "box_xyxy": [
+                  529.2,
+                  188.4,
+                  581.7,
+                  215.2
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF00321.jpg",
+            "max_confidence": 0.492642,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.492642,
+                "box_xyxy": [
+                  0.0,
+                  29.3,
+                  339.8,
+                  255.2
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF07314.jpg",
+            "max_confidence": 0.490829,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.490829,
+                "box_xyxy": [
+                  978.0,
+                  122.2,
+                  1102.4,
+                  186.4
+                ]
+              },
+              {
+                "class_name": "smoke",
+                "confidence": 0.33721,
+                "box_xyxy": [
+                  434.1,
+                  168.2,
+                  479.8,
+                  196.8
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03431.jpg",
+            "max_confidence": 0.484986,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.484986,
+                "box_xyxy": [
+                  692.1,
+                  9.2,
+                  1097.7,
+                  341.1
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03092.jpg",
+            "max_confidence": 0.482984,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.482984,
+                "box_xyxy": [
+                  16.2,
+                  10.9,
+                  1133.3,
+                  684.1
+                ]
+              },
+              {
+                "class_name": "fire",
+                "confidence": 0.397473,
+                "box_xyxy": [
+                  876.5,
+                  225.3,
+                  920.2,
+                  273.4
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF06234.jpg",
+            "max_confidence": 0.474664,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.474664,
+                "box_xyxy": [
+                  1095.1,
+                  97.2,
+                  1213.1,
+                  169.8
+                ]
+              },
+              {
+                "class_name": "smoke",
+                "confidence": 0.30595,
+                "box_xyxy": [
+                  1177.6,
+                  133.3,
+                  1208.1,
+                  169.2
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03323.jpg",
+            "max_confidence": 0.469517,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.469517,
+                "box_xyxy": [
+                  529.9,
+                  183.1,
+                  577.5,
+                  215.3
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB01959.jpg",
+            "max_confidence": 0.468553,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.468553,
+                "box_xyxy": [
+                  243.6,
+                  263.5,
+                  263.6,
+                  293.2
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB10375.jpg",
+            "max_confidence": 0.46851,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.46851,
+                "box_xyxy": [
+                  1069.5,
+                  233.7,
+                  1123.7,
+                  294.7
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03321.jpg",
+            "max_confidence": 0.465659,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.465659,
+                "box_xyxy": [
+                  530.3,
+                  190.1,
+                  574.9,
+                  215.6
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF06235.jpg",
+            "max_confidence": 0.4601,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.4601,
+                "box_xyxy": [
+                  1176.8,
+                  119.6,
+                  1214.5,
+                  169.3
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03298.jpg",
+            "max_confidence": 0.459725,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.459725,
+                "box_xyxy": [
+                  1007.2,
+                  58.8,
+                  1201.5,
+                  165.5
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03432.jpg",
+            "max_confidence": 0.452346,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.452346,
+                "box_xyxy": [
+                  688.9,
+                  9.2,
+                  1097.8,
+                  339.1
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03439.jpg",
+            "max_confidence": 0.443689,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.443689,
+                "box_xyxy": [
+                  685.8,
+                  12.9,
+                  1074.7,
+                  444.3
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB10402.jpg",
+            "max_confidence": 0.437626,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.437626,
+                "box_xyxy": [
+                  722.1,
+                  487.5,
+                  848.8,
+                  559.2
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF07589.jpg",
+            "max_confidence": 0.430961,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.430961,
+                "box_xyxy": [
+                  686.2,
+                  14.8,
+                  1077.5,
+                  420.9
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF01134.jpg",
+            "max_confidence": 0.430638,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.430638,
+                "box_xyxy": [
+                  1228.6,
+                  195.2,
+                  1257.9,
+                  226.4
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF00322.jpg",
+            "max_confidence": 0.427747,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.427747,
+                "box_xyxy": [
+                  0.0,
+                  26.8,
+                  339.8,
+                  252.2
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB10347.jpg",
+            "max_confidence": 0.426486,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.426486,
+                "box_xyxy": [
+                  166.2,
+                  6.1,
+                  794.0,
+                  444.5
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF06233.jpg",
+            "max_confidence": 0.425664,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.425664,
+                "box_xyxy": [
+                  1174.8,
+                  132.0,
+                  1209.5,
+                  168.8
+                ]
+              },
+              {
+                "class_name": "smoke",
+                "confidence": 0.384225,
+                "box_xyxy": [
+                  1098.6,
+                  95.4,
+                  1216.2,
+                  170.8
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF02997.jpg",
+            "max_confidence": 0.422676,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.422676,
+                "box_xyxy": [
+                  853.8,
+                  140.3,
+                  953.0,
+                  230.6
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB02465.jpg",
+            "max_confidence": 0.409503,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.409503,
+                "box_xyxy": [
+                  463.3,
+                  985.4,
+                  1850.7,
+                  1733.7
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03095.jpg",
+            "max_confidence": 0.407445,
+            "detections": [
+              {
+                "class_name": "fire",
+                "confidence": 0.407445,
+                "box_xyxy": [
+                  875.1,
+                  224.1,
+                  920.9,
+                  274.0
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03094.jpg",
+            "max_confidence": 0.403545,
+            "detections": [
+              {
+                "class_name": "fire",
+                "confidence": 0.403545,
+                "box_xyxy": [
+                  876.1,
+                  225.0,
+                  920.5,
+                  273.9
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03115.jpg",
+            "max_confidence": 0.402503,
+            "detections": [
+              {
+                "class_name": "fire",
+                "confidence": 0.402503,
+                "box_xyxy": [
+                  867.0,
+                  311.3,
+                  975.8,
+                  384.9
+                ]
+              },
+              {
+                "class_name": "fire",
+                "confidence": 0.36619,
+                "box_xyxy": [
+                  867.9,
+                  336.2,
+                  964.4,
+                  384.3
+                ]
+              },
+              {
+                "class_name": "fire",
+                "confidence": 0.31085,
+                "box_xyxy": [
+                  863.9,
+                  301.1,
+                  1000.1,
+                  398.9
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF02815.jpg",
+            "max_confidence": 0.400947,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.400947,
+                "box_xyxy": [
+                  476.5,
+                  306.1,
+                  552.0,
+                  423.0
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB03336.jpg",
+            "max_confidence": 0.395287,
+            "detections": [
+              {
+                "class_name": "fire",
+                "confidence": 0.395287,
+                "box_xyxy": [
+                  1003.7,
+                  322.0,
+                  1022.1,
+                  338.7
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03093.jpg",
+            "max_confidence": 0.393923,
+            "detections": [
+              {
+                "class_name": "fire",
+                "confidence": 0.393923,
+                "box_xyxy": [
+                  876.1,
+                  225.2,
+                  920.3,
+                  273.7
+                ]
+              },
+              {
+                "class_name": "smoke",
+                "confidence": 0.379599,
+                "box_xyxy": [
+                  13.3,
+                  10.8,
+                  1116.4,
+                  684.8
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF07567.jpg",
+            "max_confidence": 0.391604,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.391604,
+                "box_xyxy": [
+                  527.4,
+                  185.1,
+                  577.0,
+                  215.5
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03090.jpg",
+            "max_confidence": 0.389725,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.389725,
+                "box_xyxy": [
+                  9.5,
+                  11.1,
+                  1101.5,
+                  673.4
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF02352.jpg",
+            "max_confidence": 0.384379,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.384379,
+                "box_xyxy": [
+                  977.2,
+                  127.4,
+                  1108.8,
+                  185.1
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03096.jpg",
+            "max_confidence": 0.381729,
+            "detections": [
+              {
+                "class_name": "fire",
+                "confidence": 0.381729,
+                "box_xyxy": [
+                  874.8,
+                  223.9,
+                  921.1,
+                  273.7
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03320.jpg",
+            "max_confidence": 0.378411,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.378411,
+                "box_xyxy": [
+                  530.9,
+                  190.3,
+                  576.9,
+                  215.8
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03097.jpg",
+            "max_confidence": 0.37539,
+            "detections": [
+              {
+                "class_name": "fire",
+                "confidence": 0.37539,
+                "box_xyxy": [
+                  875.6,
+                  223.9,
+                  920.6,
+                  274.2
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB02000.jpg",
+            "max_confidence": 0.373647,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.373647,
+                "box_xyxy": [
+                  124.0,
+                  166.7,
+                  153.6,
+                  185.5
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF02349.jpg",
+            "max_confidence": 0.364162,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.364162,
+                "box_xyxy": [
+                  978.8,
+                  127.9,
+                  1109.9,
+                  185.0
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03299.jpg",
+            "max_confidence": 0.362939,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.362939,
+                "box_xyxy": [
+                  1007.0,
+                  55.3,
+                  1203.4,
+                  167.0
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB02474.jpg",
+            "max_confidence": 0.361346,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.361346,
+                "box_xyxy": [
+                  0.1,
+                  12.0,
+                  618.6,
+                  409.1
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB03653.jpg",
+            "max_confidence": 0.353568,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.353568,
+                "box_xyxy": [
+                  849.2,
+                  350.0,
+                  1146.9,
+                  578.5
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF07257.jpg",
+            "max_confidence": 0.352874,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.352874,
+                "box_xyxy": [
+                  525.3,
+                  193.4,
+                  579.3,
+                  216.6
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03105.jpg",
+            "max_confidence": 0.34667,
+            "detections": [
+              {
+                "class_name": "fire",
+                "confidence": 0.34667,
+                "box_xyxy": [
+                  877.9,
+                  338.9,
+                  955.8,
+                  386.7
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF07379.jpg",
+            "max_confidence": 0.345058,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.345058,
+                "box_xyxy": [
+                  1000.8,
+                  145.7,
+                  1038.0,
+                  165.1
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03438.jpg",
+            "max_confidence": 0.343821,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.343821,
+                "box_xyxy": [
+                  680.5,
+                  14.6,
+                  1062.8,
+                  437.3
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03436.jpg",
+            "max_confidence": 0.338819,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.338819,
+                "box_xyxy": [
+                  680.7,
+                  14.1,
+                  1068.4,
+                  426.5
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB02157.jpg",
+            "max_confidence": 0.336301,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.336301,
+                "box_xyxy": [
+                  0.6,
+                  412.2,
+                  202.8,
+                  587.7
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB02705.jpg",
+            "max_confidence": 0.328047,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.328047,
+                "box_xyxy": [
+                  24.9,
+                  78.7,
+                  528.4,
+                  443.9
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03322.jpg",
+            "max_confidence": 0.319671,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.319671,
+                "box_xyxy": [
+                  529.6,
+                  188.2,
+                  576.9,
+                  215.9
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03117.jpg",
+            "max_confidence": 0.31768,
+            "detections": [
+              {
+                "class_name": "fire",
+                "confidence": 0.31768,
+                "box_xyxy": [
+                  888.6,
+                  344.7,
+                  952.5,
+                  381.7
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB02445.jpg",
+            "max_confidence": 0.317617,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.317617,
+                "box_xyxy": [
+                  216.6,
+                  8.7,
+                  589.8,
+                  206.5
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB02700.jpg",
+            "max_confidence": 0.316344,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.316344,
+                "box_xyxy": [
+                  0.9,
+                  131.3,
+                  353.2,
+                  403.6
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03091.jpg",
+            "max_confidence": 0.315069,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.315069,
+                "box_xyxy": [
+                  10.9,
+                  11.9,
+                  1111.1,
+                  673.2
+                ]
+              },
+              {
+                "class_name": "fire",
+                "confidence": 0.304127,
+                "box_xyxy": [
+                  877.1,
+                  226.8,
+                  919.0,
+                  274.4
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF07337.jpg",
+            "max_confidence": 0.311825,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.311825,
+                "box_xyxy": [
+                  389.9,
+                  81.0,
+                  1280.0,
+                  712.3
+                ]
+              }
+            ]
+          },
+          {
+            "image": "WEB01974.jpg",
+            "max_confidence": 0.305859,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.305859,
+                "box_xyxy": [
+                  114.8,
+                  175.5,
+                  154.6,
+                  215.6
+                ]
+              }
+            ]
+          },
+          {
+            "image": "AoF03495.jpg",
+            "max_confidence": 0.301015,
+            "detections": [
+              {
+                "class_name": "smoke",
+                "confidence": 0.301015,
+                "box_xyxy": [
+                  656.5,
+                  16.3,
+                  1037.7,
+                  374.2
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 76.3
+    }
+  ],
+  "disclaimer": "Empty-label image false-alarm rate is measured only on labeled negatives in this dataset and is not a real-world wildfire alarm rate."
+}

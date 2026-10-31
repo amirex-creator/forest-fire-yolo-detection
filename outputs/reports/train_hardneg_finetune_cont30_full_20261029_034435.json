@@ -1,0 +1,391 @@
+{
+  "run_name": "hardneg_finetune_cont30_full_20261029_034435",
+  "run_dir": "outputs/train_runs/hardneg_finetune_cont30_full_20261029_034435",
+  "status": "success",
+  "started_at": "2026-10-29T03:44:35+08:00",
+  "finished_at": "2026-10-29T04:21:39+08:00",
+  "seconds": 2223.8,
+  "settings": {
+    "model": "models\\hardneg_finetune_cont20_full_20261029_024922_best.pt",
+    "pretrained": true,
+    "data_config": "configs\\forest_smoke_hard_negatives_full.yaml",
+    "epochs": 10,
+    "imgsz": 640,
+    "batch": 8,
+    "workers": 1,
+    "patience": 10,
+    "seed": 0,
+    "deterministic": true,
+    "amp": true,
+    "cache": false,
+    "device": "0",
+    "project": "outputs/train_runs",
+    "name": "hardneg_finetune_cont30",
+    "fraction": 1.0,
+    "plots": true,
+    "max_images": 0,
+    "mode": "full",
+    "no_downgrade": true,
+    "snapshot": true,
+    "per_class_val": true,
+    "epoch_budget": 40,
+    "allow_exceed_budget": false,
+    "lr0": 0.001,
+    "lrf": 0.01,
+    "warmup_epochs": 0.5,
+    "close_mosaic": 2
+  },
+  "device": {
+    "preferred": "0",
+    "selected": "0",
+    "reason": "GPU 矩阵乘法通过",
+    "torch": "2.13.0+cu126",
+    "cuda_build": "12.6",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_capability": [
+      8,
+      6
+    ],
+    "vram_total_mb": 6143.5,
+    "matmul_check": "PASS"
+  },
+  "batch_used": 8,
+  "attempts": [
+    {
+      "batch": 8,
+      "status": "success",
+      "seconds": 2168.1
+    }
+  ],
+  "data_check": {
+    "split_images": {
+      "train": 15217,
+      "val": 3229,
+      "test": 3229
+    },
+    "split_labels": {
+      "train": 15217,
+      "val": 3229,
+      "test": 3229
+    },
+    "class_names": [
+      "smoke",
+      "fire"
+    ],
+    "blocking": 0,
+    "warnings": 0,
+    "notes": [
+      "train 清单 train_manifest.txt：15217 张图片，缺图片 0，缺标签 0"
+    ]
+  },
+  "resources": {
+    "samples": 1082,
+    "interval_s": 2.0,
+    "process_rss_peak_mb": 2683.5,
+    "system_ram_available_low_mb": 2617.6,
+    "cuda_allocated_peak_mb": 940.5,
+    "cuda_reserved_peak_mb": 1484.0
+  },
+  "trial_split": null,
+  "dataset_changes": {
+    "scanned_images": 21527,
+    "modified_count": 0,
+    "modified": []
+  },
+  "snapshot": {
+    "path": "outputs/train_runs/hardneg_finetune_cont30_full_20261029_034435/image_snapshot.json",
+    "images": 21527,
+    "total_bytes": 3125783486,
+    "seconds": 13.7
+  },
+  "snapshot_diff": {
+    "checked": 21527,
+    "changed_count": 0,
+    "changed": [],
+    "missing": [],
+    "added": []
+  },
+  "per_class_val": {
+    "split": "val",
+    "weights": "models/hardneg_finetune_cont30_full_20261029_034435_best.pt",
+    "aggregate": {
+      "precision": 0.7283,
+      "recall": 0.6464,
+      "mAP50": 0.7118,
+      "mAP50_95": 0.4027,
+      "instances_by_class": {
+        "smoke": 1591,
+        "fire": 1789
+      }
+    },
+    "per_class": {
+      "smoke": {
+        "instances": 1591,
+        "precision": 0.7735,
+        "recall": 0.7108,
+        "mAP50": 0.7671,
+        "mAP50_95": 0.4559
+      },
+      "fire": {
+        "instances": 1789,
+        "precision": 0.683,
+        "recall": 0.5819,
+        "mAP50": 0.6565,
+        "mAP50_95": 0.3496
+      }
+    },
+    "speed_ms": {
+      "preprocess": 0.19,
+      "inference": 3.197,
+      "loss": 0.001,
+      "postprocess": 1.11
+    }
+  },
+  "overfitting": {
+    "verdict": "暂无明显过拟合迹象",
+    "detail": "训练与验证曲线方向一致。",
+    "window_epochs": [
+      8,
+      9,
+      10
+    ],
+    "train_box_loss": [
+      1.28529,
+      1.29523,
+      1.28615
+    ],
+    "val_box_loss": [
+      1.11361,
+      1.14535,
+      1.11111
+    ],
+    "train_cls_loss": [
+      1.00761,
+      0.93424,
+      0.90795
+    ],
+    "val_cls_loss": [
+      1.76903,
+      1.45528,
+      1.37106
+    ],
+    "val_minus_train_box_gap": [
+      -0.1717,
+      -0.1499,
+      -0.175
+    ],
+    "mAP50_window": [
+      0.70618,
+      0.70611,
+      0.71178
+    ]
+  },
+  "epochs_budget": {
+    "completed_before": 30,
+    "this_batch": 10,
+    "budget": 40
+  },
+  "base_weights": "models\\hardneg_finetune_cont20_full_20261029_024922_best.pt",
+  "cuda_peak": {
+    "max_memory_allocated_mb": 966.7,
+    "max_memory_reserved_mb": 1484.0
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train/box_loss": 1.31532,
+      "train/cls_loss": 1.05879,
+      "train/dfl_loss": 1.26984,
+      "val/box_loss": 1.18277,
+      "val/cls_loss": 2.78187,
+      "val/dfl_loss": 1.0585,
+      "metrics/precision(B)": 0.65001,
+      "metrics/recall(B)": 0.59888,
+      "metrics/mAP50(B)": 0.64636,
+      "metrics/mAP50-95(B)": 0.34899,
+      "lr/pg0": 0.001667
+    },
+    {
+      "epoch": 2,
+      "train/box_loss": 1.36089,
+      "train/cls_loss": 1.13008,
+      "train/dfl_loss": 1.2958,
+      "val/box_loss": 1.21331,
+      "val/cls_loss": 2.51502,
+      "val/dfl_loss": 1.06594,
+      "metrics/precision(B)": 0.68746,
+      "metrics/recall(B)": 0.593,
+      "metrics/mAP50(B)": 0.6492,
+      "metrics/mAP50-95(B)": 0.34193,
+      "lr/pg0": 0.00150197
+    },
+    {
+      "epoch": 3,
+      "train/box_loss": 1.34369,
+      "train/cls_loss": 1.10669,
+      "train/dfl_loss": 1.28619,
+      "val/box_loss": 1.16603,
+      "val/cls_loss": 1.79352,
+      "val/dfl_loss": 1.03287,
+      "metrics/precision(B)": 0.67581,
+      "metrics/recall(B)": 0.62156,
+      "metrics/mAP50(B)": 0.67993,
+      "metrics/mAP50-95(B)": 0.37214,
+      "lr/pg0": 0.00133693
+    },
+    {
+      "epoch": 4,
+      "train/box_loss": 1.32843,
+      "train/cls_loss": 1.0811,
+      "train/dfl_loss": 1.27603,
+      "val/box_loss": 1.17391,
+      "val/cls_loss": 1.8549,
+      "val/dfl_loss": 1.05266,
+      "metrics/precision(B)": 0.70881,
+      "metrics/recall(B)": 0.6154,
+      "metrics/mAP50(B)": 0.67472,
+      "metrics/mAP50-95(B)": 0.36841,
+      "lr/pg0": 0.0011719
+    },
+    {
+      "epoch": 5,
+      "train/box_loss": 1.31679,
+      "train/cls_loss": 1.05747,
+      "train/dfl_loss": 1.27289,
+      "val/box_loss": 1.14606,
+      "val/cls_loss": 1.99686,
+      "val/dfl_loss": 1.0248,
+      "metrics/precision(B)": 0.70162,
+      "metrics/recall(B)": 0.62598,
+      "metrics/mAP50(B)": 0.68379,
+      "metrics/mAP50-95(B)": 0.3794,
+      "lr/pg0": 0.00100687
+    },
+    {
+      "epoch": 6,
+      "train/box_loss": 1.30655,
+      "train/cls_loss": 1.04233,
+      "train/dfl_loss": 1.26753,
+      "val/box_loss": 1.13675,
+      "val/cls_loss": 1.63482,
+      "val/dfl_loss": 1.0174,
+      "metrics/precision(B)": 0.69994,
+      "metrics/recall(B)": 0.62193,
+      "metrics/mAP50(B)": 0.68404,
+      "metrics/mAP50-95(B)": 0.37963,
+      "lr/pg0": 0.000841835
+    },
+    {
+      "epoch": 7,
+      "train/box_loss": 1.29693,
+      "train/cls_loss": 1.01712,
+      "train/dfl_loss": 1.26019,
+      "val/box_loss": 1.13638,
+      "val/cls_loss": 1.66497,
+      "val/dfl_loss": 1.01924,
+      "metrics/precision(B)": 0.70458,
+      "metrics/recall(B)": 0.63757,
+      "metrics/mAP50(B)": 0.69463,
+      "metrics/mAP50-95(B)": 0.38956,
+      "lr/pg0": 0.000676802
+    },
+    {
+      "epoch": 8,
+      "train/box_loss": 1.28529,
+      "train/cls_loss": 1.00761,
+      "train/dfl_loss": 1.25556,
+      "val/box_loss": 1.11361,
+      "val/cls_loss": 1.76903,
+      "val/dfl_loss": 1.00049,
+      "metrics/precision(B)": 0.71718,
+      "metrics/recall(B)": 0.64212,
+      "metrics/mAP50(B)": 0.70618,
+      "metrics/mAP50-95(B)": 0.40175,
+      "lr/pg0": 0.000511769
+    },
+    {
+      "epoch": 9,
+      "train/box_loss": 1.29523,
+      "train/cls_loss": 0.93424,
+      "train/dfl_loss": 1.25398,
+      "val/box_loss": 1.14535,
+      "val/cls_loss": 1.45528,
+      "val/dfl_loss": 1.02038,
+      "metrics/precision(B)": 0.71962,
+      "metrics/recall(B)": 0.64144,
+      "metrics/mAP50(B)": 0.70611,
+      "metrics/mAP50-95(B)": 0.39419,
+      "lr/pg0": 0.000346736
+    },
+    {
+      "epoch": 10,
+      "train/box_loss": 1.28615,
+      "train/cls_loss": 0.90795,
+      "train/dfl_loss": 1.25525,
+      "val/box_loss": 1.11111,
+      "val/cls_loss": 1.37106,
+      "val/dfl_loss": 1.00069,
+      "metrics/precision(B)": 0.72835,
+      "metrics/recall(B)": 0.64463,
+      "metrics/mAP50(B)": 0.71178,
+      "metrics/mAP50-95(B)": 0.40242,
+      "lr/pg0": 0.000181703
+    }
+  ],
+  "artifacts": {
+    "weights": {
+      "best.pt": {
+        "path": "models/hardneg_finetune_cont30_full_20261029_034435_best.pt",
+        "bytes": 6480170
+      },
+      "last.pt": {
+        "path": "models/hardneg_finetune_cont30_full_20261029_034435_last.pt",
+        "bytes": 6480170
+      }
+    },
+    "figures": [
+      {
+        "name": "results.png",
+        "path": "outputs/figures/hardneg_finetune_cont30_full_20261029_034435/results.png",
+        "bytes": 294835
+      },
+      {
+        "name": "results.csv",
+        "path": "outputs/figures/hardneg_finetune_cont30_full_20261029_034435/results.csv",
+        "bytes": 1427
+      },
+      {
+        "name": "confusion_matrix.png",
+        "path": "outputs/figures/hardneg_finetune_cont30_full_20261029_034435/confusion_matrix.png",
+        "bytes": 104757
+      },
+      {
+        "name": "confusion_matrix_normalized.png",
+        "path": "outputs/figures/hardneg_finetune_cont30_full_20261029_034435/confusion_matrix_normalized.png",
+        "bytes": 102530
+      },
+      {
+        "name": "labels.jpg",
+        "path": "outputs/figures/hardneg_finetune_cont30_full_20261029_034435/labels.jpg",
+        "bytes": 127402
+      },
+      {
+        "name": "train_batch0.jpg",
+        "path": "outputs/figures/hardneg_finetune_cont30_full_20261029_034435/train_batch0.jpg",
+        "bytes": 444861
+      },
+      {
+        "name": "val_batch0_labels.jpg",
+        "path": "outputs/figures/hardneg_finetune_cont30_full_20261029_034435/val_batch0_labels.jpg",
+        "bytes": 295935
+      },
+      {
+        "name": "val_batch0_pred.jpg",
+        "path": "outputs/figures/hardneg_finetune_cont30_full_20261029_034435/val_batch0_pred.jpg",
+        "bytes": 298932
+      }
+    ]
+  },
+  "disclaimer": "模型的识别结果仅供辅助分析，需人工核实；本系统不做森林火灾预警，也不能仅凭检测结果确认真实火灾。"
+}

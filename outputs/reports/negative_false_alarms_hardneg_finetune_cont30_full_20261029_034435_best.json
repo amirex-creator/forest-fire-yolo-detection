@@ -1,0 +1,738 @@
+{
+  "generated_at": "2026-10-29T04:27:49+08:00",
+  "weights": "models/hardneg_finetune_cont30_full_20261029_034435_best.pt",
+  "split": "test",
+  "subset": "images whose ground-truth label files are empty",
+  "images": 1645,
+  "images_with_false_alarm": 89,
+  "image_false_alarm_rate": 0.054103,
+  "false_positive_boxes": 97,
+  "boxes_by_class": {
+    "smoke": 82,
+    "fire": 15
+  },
+  "thresholds": {
+    "conf": 0.3,
+    "imgsz": 640,
+    "device": "0",
+    "batch": 1
+  },
+  "flagged_images": [
+    {
+      "image": "AoF00319.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.518232
+    },
+    {
+      "image": "AoF00321.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.492642
+    },
+    {
+      "image": "AoF00322.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.427747
+    },
+    {
+      "image": "AoF01134.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.430638
+    },
+    {
+      "image": "AoF02349.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.364162
+    },
+    {
+      "image": "AoF02350.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.520182
+    },
+    {
+      "image": "AoF02352.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.384379
+    },
+    {
+      "image": "AoF02815.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.400947
+    },
+    {
+      "image": "AoF02997.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.422676
+    },
+    {
+      "image": "AoF03090.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.389725
+    },
+    {
+      "image": "AoF03091.jpg",
+      "boxes": 2,
+      "classes": {
+        "smoke": 1,
+        "fire": 1
+      },
+      "max_confidence": 0.315069
+    },
+    {
+      "image": "AoF03092.jpg",
+      "boxes": 2,
+      "classes": {
+        "smoke": 1,
+        "fire": 1
+      },
+      "max_confidence": 0.482984
+    },
+    {
+      "image": "AoF03093.jpg",
+      "boxes": 2,
+      "classes": {
+        "fire": 1,
+        "smoke": 1
+      },
+      "max_confidence": 0.393923
+    },
+    {
+      "image": "AoF03094.jpg",
+      "boxes": 1,
+      "classes": {
+        "fire": 1
+      },
+      "max_confidence": 0.403545
+    },
+    {
+      "image": "AoF03095.jpg",
+      "boxes": 1,
+      "classes": {
+        "fire": 1
+      },
+      "max_confidence": 0.407445
+    },
+    {
+      "image": "AoF03096.jpg",
+      "boxes": 1,
+      "classes": {
+        "fire": 1
+      },
+      "max_confidence": 0.381729
+    },
+    {
+      "image": "AoF03097.jpg",
+      "boxes": 1,
+      "classes": {
+        "fire": 1
+      },
+      "max_confidence": 0.37539
+    },
+    {
+      "image": "AoF03105.jpg",
+      "boxes": 1,
+      "classes": {
+        "fire": 1
+      },
+      "max_confidence": 0.34667
+    },
+    {
+      "image": "AoF03115.jpg",
+      "boxes": 3,
+      "classes": {
+        "fire": 3
+      },
+      "max_confidence": 0.402503
+    },
+    {
+      "image": "AoF03117.jpg",
+      "boxes": 1,
+      "classes": {
+        "fire": 1
+      },
+      "max_confidence": 0.31768
+    },
+    {
+      "image": "AoF03298.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.459725
+    },
+    {
+      "image": "AoF03299.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.362939
+    },
+    {
+      "image": "AoF03300.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.588449
+    },
+    {
+      "image": "AoF03301.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.58064
+    },
+    {
+      "image": "AoF03302.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.717944
+    },
+    {
+      "image": "AoF03303.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.746219
+    },
+    {
+      "image": "AoF03304.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.750815
+    },
+    {
+      "image": "AoF03306.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.67272
+    },
+    {
+      "image": "AoF03307.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.67031
+    },
+    {
+      "image": "AoF03308.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.69235
+    },
+    {
+      "image": "AoF03309.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.770761
+    },
+    {
+      "image": "AoF03310.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.785872
+    },
+    {
+      "image": "AoF03311.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.761824
+    },
+    {
+      "image": "AoF03319.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.498208
+    },
+    {
+      "image": "AoF03320.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.378411
+    },
+    {
+      "image": "AoF03321.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.465659
+    },
+    {
+      "image": "AoF03322.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.319671
+    },
+    {
+      "image": "AoF03323.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.469517
+    },
+    {
+      "image": "AoF03431.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.484986
+    },
+    {
+      "image": "AoF03432.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.452346
+    },
+    {
+      "image": "AoF03433.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.636301
+    },
+    {
+      "image": "AoF03434.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.690734
+    },
+    {
+      "image": "AoF03435.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.636458
+    },
+    {
+      "image": "AoF03436.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.338819
+    },
+    {
+      "image": "AoF03438.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.343821
+    },
+    {
+      "image": "AoF03439.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.443689
+    },
+    {
+      "image": "AoF03495.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.301015
+    },
+    {
+      "image": "AoF06233.jpg",
+      "boxes": 2,
+      "classes": {
+        "smoke": 2
+      },
+      "max_confidence": 0.425664
+    },
+    {
+      "image": "AoF06234.jpg",
+      "boxes": 2,
+      "classes": {
+        "smoke": 2
+      },
+      "max_confidence": 0.474664
+    },
+    {
+      "image": "AoF06235.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.4601
+    },
+    {
+      "image": "AoF06291.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.550593
+    },
+    {
+      "image": "AoF07257.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.352874
+    },
+    {
+      "image": "AoF07314.jpg",
+      "boxes": 2,
+      "classes": {
+        "smoke": 2
+      },
+      "max_confidence": 0.490829
+    },
+    {
+      "image": "AoF07337.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.311825
+    },
+    {
+      "image": "AoF07379.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.345058
+    },
+    {
+      "image": "AoF07562.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.658705
+    },
+    {
+      "image": "AoF07563.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.685064
+    },
+    {
+      "image": "AoF07564.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.768923
+    },
+    {
+      "image": "AoF07565.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.736658
+    },
+    {
+      "image": "AoF07566.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.735756
+    },
+    {
+      "image": "AoF07567.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.391604
+    },
+    {
+      "image": "AoF07587.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.752762
+    },
+    {
+      "image": "AoF07589.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.430961
+    },
+    {
+      "image": "PublicDataset00875.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.763571
+    },
+    {
+      "image": "PublicDataset00895.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.509713
+    },
+    {
+      "image": "PublicDataset00914.jpg",
+      "boxes": 1,
+      "classes": {
+        "fire": 1
+      },
+      "max_confidence": 0.520074
+    },
+    {
+      "image": "WEB01812.jpg",
+      "boxes": 1,
+      "classes": {
+        "fire": 1
+      },
+      "max_confidence": 0.696897
+    },
+    {
+      "image": "WEB01959.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.468553
+    },
+    {
+      "image": "WEB01974.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.305859
+    },
+    {
+      "image": "WEB02000.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.373647
+    },
+    {
+      "image": "WEB02157.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.336301
+    },
+    {
+      "image": "WEB02258.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.735075
+    },
+    {
+      "image": "WEB02445.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.317617
+    },
+    {
+      "image": "WEB02465.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.409503
+    },
+    {
+      "image": "WEB02474.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.361346
+    },
+    {
+      "image": "WEB02477.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.687127
+    },
+    {
+      "image": "WEB02636.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.535577
+    },
+    {
+      "image": "WEB02700.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.316344
+    },
+    {
+      "image": "WEB02705.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.328047
+    },
+    {
+      "image": "WEB02790.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.631338
+    },
+    {
+      "image": "WEB02822.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.577859
+    },
+    {
+      "image": "WEB03336.jpg",
+      "boxes": 1,
+      "classes": {
+        "fire": 1
+      },
+      "max_confidence": 0.395287
+    },
+    {
+      "image": "WEB03653.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.353568
+    },
+    {
+      "image": "WEB09504.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.540931
+    },
+    {
+      "image": "WEB10115.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.613585
+    },
+    {
+      "image": "WEB10347.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.426486
+    },
+    {
+      "image": "WEB10375.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.46851
+    },
+    {
+      "image": "WEB10402.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.437626
+    },
+    {
+      "image": "WEB10418.jpg",
+      "boxes": 1,
+      "classes": {
+        "smoke": 1
+      },
+      "max_confidence": 0.640033
+    }
+  ],
+  "disclaimer": "Image-level false alarms on labeled negatives; this does not measure all real-world backgrounds."
+}

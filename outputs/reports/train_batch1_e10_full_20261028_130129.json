@@ -1,0 +1,579 @@
+{
+  "run_name": "batch1_e10_full_20261028_130129",
+  "run_dir": "outputs/train_runs/batch1_e10_full_20261028_130129",
+  "status": "success",
+  "started_at": "2026-10-28T13:01:29+08:00",
+  "finished_at": "2026-10-28T13:48:25+08:00",
+  "seconds": 2815.6,
+  "settings": {
+    "model": "yolov8n.pt",
+    "pretrained": true,
+    "data_config": "E:\\DeepSeek Harness\\fs_smoke\\configs\\forest_smoke.yaml",
+    "epochs": 10,
+    "imgsz": 640,
+    "batch": 8,
+    "workers": 1,
+    "patience": 30,
+    "seed": 0,
+    "deterministic": true,
+    "amp": true,
+    "cache": false,
+    "device": "0",
+    "project": "outputs/train_runs",
+    "name": "batch1_e10",
+    "fraction": 1.0,
+    "plots": true,
+    "max_images": 0,
+    "mode": "full",
+    "no_downgrade": true,
+    "snapshot": true,
+    "per_class_val": true,
+    "epoch_budget": 30,
+    "allow_exceed_budget": false
+  },
+  "device": {
+    "preferred": "0",
+    "selected": "0",
+    "reason": "GPU 矩阵乘法通过",
+    "torch": "2.13.0+cu126",
+    "cuda_build": "12.6",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_capability": [
+      8,
+      6
+    ],
+    "vram_total_mb": 6143.5,
+    "matmul_check": "PASS"
+  },
+  "batch_used": 8,
+  "attempts": [
+    {
+      "batch": 8,
+      "status": "success",
+      "seconds": 2664.0
+    }
+  ],
+  "data_check": {
+    "split_images": {
+      "train": 15069,
+      "val": 3229,
+      "test": 3229
+    },
+    "split_labels": {
+      "train": 15069,
+      "val": 3229,
+      "test": 3229
+    },
+    "class_names": [
+      "smoke",
+      "fire"
+    ],
+    "blocking": 0,
+    "warnings": 0,
+    "notes": []
+  },
+  "resources": {
+    "samples": 1329,
+    "interval_s": 2.0,
+    "process_rss_peak_mb": 2627.4,
+    "system_ram_available_low_mb": 555.4,
+    "cuda_allocated_peak_mb": 942.7,
+    "cuda_reserved_peak_mb": 1520.0
+  },
+  "trial_split": null,
+  "dataset_changes": {
+    "scanned_images": 21527,
+    "modified_count": 16,
+    "modified": [
+      {
+        "split": "train",
+        "name": "WEB02521.jpg",
+        "bytes": 2766798,
+        "mtime": "2026-10-28T13:03:29"
+      },
+      {
+        "split": "train",
+        "name": "WEB07199.jpg",
+        "bytes": 244832,
+        "mtime": "2026-10-28T13:03:31"
+      },
+      {
+        "split": "train",
+        "name": "WEB07278.jpg",
+        "bytes": 335390,
+        "mtime": "2026-10-28T13:03:31"
+      },
+      {
+        "split": "train",
+        "name": "WEB07312.jpg",
+        "bytes": 409029,
+        "mtime": "2026-10-28T13:03:32"
+      },
+      {
+        "split": "train",
+        "name": "WEB07534.jpg",
+        "bytes": 310438,
+        "mtime": "2026-10-28T13:03:32"
+      },
+      {
+        "split": "train",
+        "name": "WEB07535.jpg",
+        "bytes": 328682,
+        "mtime": "2026-10-28T13:03:32"
+      },
+      {
+        "split": "train",
+        "name": "WEB07538.jpg",
+        "bytes": 312680,
+        "mtime": "2026-10-28T13:03:32"
+      },
+      {
+        "split": "train",
+        "name": "WEB07542.jpg",
+        "bytes": 262679,
+        "mtime": "2026-10-28T13:03:32"
+      },
+      {
+        "split": "train",
+        "name": "WEB07543.jpg",
+        "bytes": 534100,
+        "mtime": "2026-10-28T13:03:32"
+      },
+      {
+        "split": "train",
+        "name": "WEB07556.jpg",
+        "bytes": 386570,
+        "mtime": "2026-10-28T13:03:32"
+      },
+      {
+        "split": "train",
+        "name": "WEB07559.jpg",
+        "bytes": 377570,
+        "mtime": "2026-10-28T13:03:32"
+      },
+      {
+        "split": "train",
+        "name": "WEB11243.jpg",
+        "bytes": 262646,
+        "mtime": "2026-10-28T13:03:34"
+      },
+      {
+        "split": "train",
+        "name": "WEB11313.jpg",
+        "bytes": 243224,
+        "mtime": "2026-10-28T13:03:34"
+      },
+      {
+        "split": "train",
+        "name": "WEB11320.jpg",
+        "bytes": 347059,
+        "mtime": "2026-10-28T13:03:34"
+      },
+      {
+        "split": "train",
+        "name": "WEB11321.jpg",
+        "bytes": 626343,
+        "mtime": "2026-10-28T13:03:34"
+      },
+      {
+        "split": "train",
+        "name": "WEB11322.jpg",
+        "bytes": 116327,
+        "mtime": "2026-10-28T13:03:34"
+      }
+    ]
+  },
+  "snapshot": {
+    "path": "outputs/train_runs/batch1_e10_full_20261028_130129/image_snapshot.json",
+    "images": 21527,
+    "total_bytes": 3119185667,
+    "seconds": 107.3
+  },
+  "snapshot_diff": {
+    "checked": 21527,
+    "changed_count": 16,
+    "changed": [
+      {
+        "file": "train/WEB02521.jpg",
+        "before_bytes": 1066863,
+        "after_bytes": 2766798,
+        "after_mtime": "2026-10-28T13:03:29"
+      },
+      {
+        "file": "train/WEB07199.jpg",
+        "before_bytes": 47471,
+        "after_bytes": 244832,
+        "after_mtime": "2026-10-28T13:03:31"
+      },
+      {
+        "file": "train/WEB07278.jpg",
+        "before_bytes": 155437,
+        "after_bytes": 335390,
+        "after_mtime": "2026-10-28T13:03:31"
+      },
+      {
+        "file": "train/WEB07312.jpg",
+        "before_bytes": 171734,
+        "after_bytes": 409029,
+        "after_mtime": "2026-10-28T13:03:32"
+      },
+      {
+        "file": "train/WEB07534.jpg",
+        "before_bytes": 108953,
+        "after_bytes": 310438,
+        "after_mtime": "2026-10-28T13:03:32"
+      },
+      {
+        "file": "train/WEB07535.jpg",
+        "before_bytes": 108741,
+        "after_bytes": 328682,
+        "after_mtime": "2026-10-28T13:03:32"
+      },
+      {
+        "file": "train/WEB07538.jpg",
+        "before_bytes": 68740,
+        "after_bytes": 312680,
+        "after_mtime": "2026-10-28T13:03:32"
+      },
+      {
+        "file": "train/WEB07542.jpg",
+        "before_bytes": 103649,
+        "after_bytes": 262679,
+        "after_mtime": "2026-10-28T13:03:32"
+      },
+      {
+        "file": "train/WEB07543.jpg",
+        "before_bytes": 178436,
+        "after_bytes": 534100,
+        "after_mtime": "2026-10-28T13:03:32"
+      },
+      {
+        "file": "train/WEB07556.jpg",
+        "before_bytes": 150226,
+        "after_bytes": 386570,
+        "after_mtime": "2026-10-28T13:03:32"
+      },
+      {
+        "file": "train/WEB07559.jpg",
+        "before_bytes": 94565,
+        "after_bytes": 377570,
+        "after_mtime": "2026-10-28T13:03:32"
+      },
+      {
+        "file": "train/WEB11243.jpg",
+        "before_bytes": 112621,
+        "after_bytes": 262646,
+        "after_mtime": "2026-10-28T13:03:34"
+      },
+      {
+        "file": "train/WEB11313.jpg",
+        "before_bytes": 84154,
+        "after_bytes": 243224,
+        "after_mtime": "2026-10-28T13:03:34"
+      },
+      {
+        "file": "train/WEB11320.jpg",
+        "before_bytes": 61069,
+        "after_bytes": 347059,
+        "after_mtime": "2026-10-28T13:03:34"
+      },
+      {
+        "file": "train/WEB11321.jpg",
+        "before_bytes": 175295,
+        "after_bytes": 626343,
+        "after_mtime": "2026-10-28T13:03:34"
+      },
+      {
+        "file": "train/WEB11322.jpg",
+        "before_bytes": 57171,
+        "after_bytes": 116327,
+        "after_mtime": "2026-10-28T13:03:34"
+      }
+    ],
+    "missing": [],
+    "added": []
+  },
+  "per_class_val": {
+    "split": "val",
+    "weights": "models/batch1_e10_full_20261028_130129_best.pt",
+    "aggregate": {
+      "precision": 0.6757,
+      "recall": 0.5884,
+      "mAP50": 0.6528,
+      "mAP50_95": 0.3548,
+      "instances_by_class": {
+        "smoke": 1591,
+        "fire": 1789
+      }
+    },
+    "per_class": {
+      "smoke": {
+        "instances": 1591,
+        "precision": 0.7281,
+        "recall": 0.6463,
+        "mAP50": 0.7119,
+        "mAP50_95": 0.3998
+      },
+      "fire": {
+        "instances": 1789,
+        "precision": 0.6233,
+        "recall": 0.5305,
+        "mAP50": 0.5937,
+        "mAP50_95": 0.3098
+      }
+    },
+    "speed_ms": {
+      "preprocess": 0.187,
+      "inference": 2.893,
+      "loss": 0.001,
+      "postprocess": 1.031
+    }
+  },
+  "overfitting": {
+    "verdict": "暂无明显过拟合迹象",
+    "detail": "训练与验证 loss 同步下降，验证指标仍在提升。",
+    "window_epochs": [
+      8,
+      9,
+      10
+    ],
+    "train_box_loss": [
+      1.63748,
+      1.5871,
+      1.529
+    ],
+    "val_box_loss": [
+      1.18288,
+      1.14438,
+      1.12769
+    ],
+    "train_cls_loss": [
+      1.53643,
+      1.45472,
+      1.34286
+    ],
+    "val_cls_loss": [
+      2.25097,
+      1.7669,
+      1.79102
+    ],
+    "val_minus_train_box_gap": [
+      -0.4546,
+      -0.4427,
+      -0.4013
+    ],
+    "mAP50_window": [
+      0.58936,
+      0.62805,
+      0.65285
+    ]
+  },
+  "epochs_budget": {
+    "completed_before": 0,
+    "this_batch": 10,
+    "budget": 30
+  },
+  "base_weights": "yolov8n.pt",
+  "cuda_peak": {
+    "max_memory_allocated_mb": 963.9,
+    "max_memory_reserved_mb": 1520.0
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train/box_loss": 1.95801,
+      "train/cls_loss": 3.38292,
+      "train/dfl_loss": 1.78666,
+      "val/box_loss": 1.45705,
+      "val/cls_loss": 7.36177,
+      "val/dfl_loss": 1.28018,
+      "metrics/precision(B)": 0.37194,
+      "metrics/recall(B)": 0.36028,
+      "metrics/mAP50(B)": 0.2971,
+      "metrics/mAP50-95(B)": 0.12369,
+      "lr/pg0": 0.000555372
+    },
+    {
+      "epoch": 2,
+      "train/box_loss": 1.98401,
+      "train/cls_loss": 2.23018,
+      "train/dfl_loss": 1.78725,
+      "val/box_loss": 1.41755,
+      "val/cls_loss": 3.87896,
+      "val/dfl_loss": 1.24298,
+      "metrics/precision(B)": 0.4312,
+      "metrics/recall(B)": 0.37495,
+      "metrics/mAP50(B)": 0.36621,
+      "metrics/mAP50-95(B)": 0.16189,
+      "lr/pg0": 0.00100105
+    },
+    {
+      "epoch": 3,
+      "train/box_loss": 1.92564,
+      "train/cls_loss": 2.11507,
+      "train/dfl_loss": 1.75212,
+      "val/box_loss": 1.3482,
+      "val/cls_loss": 5.01948,
+      "val/dfl_loss": 1.21582,
+      "metrics/precision(B)": 0.5039,
+      "metrics/recall(B)": 0.40708,
+      "metrics/mAP50(B)": 0.41328,
+      "metrics/mAP50-95(B)": 0.19577,
+      "lr/pg0": 0.0013367
+    },
+    {
+      "epoch": 4,
+      "train/box_loss": 1.8447,
+      "train/cls_loss": 2.00273,
+      "train/dfl_loss": 1.69334,
+      "val/box_loss": 1.27954,
+      "val/cls_loss": 4.09585,
+      "val/dfl_loss": 1.14137,
+      "metrics/precision(B)": 0.52741,
+      "metrics/recall(B)": 0.47598,
+      "metrics/mAP50(B)": 0.49977,
+      "metrics/mAP50-95(B)": 0.24486,
+      "lr/pg0": 0.0011719
+    },
+    {
+      "epoch": 5,
+      "train/box_loss": 1.77913,
+      "train/cls_loss": 1.85726,
+      "train/dfl_loss": 1.62893,
+      "val/box_loss": 1.26537,
+      "val/cls_loss": 2.02524,
+      "val/dfl_loss": 1.12541,
+      "metrics/precision(B)": 0.55014,
+      "metrics/recall(B)": 0.48387,
+      "metrics/mAP50(B)": 0.49285,
+      "metrics/mAP50-95(B)": 0.24891,
+      "lr/pg0": 0.00100687
+    },
+    {
+      "epoch": 6,
+      "train/box_loss": 1.71874,
+      "train/cls_loss": 1.73464,
+      "train/dfl_loss": 1.57573,
+      "val/box_loss": 1.22854,
+      "val/cls_loss": 2.76281,
+      "val/dfl_loss": 1.10639,
+      "metrics/precision(B)": 0.59636,
+      "metrics/recall(B)": 0.50632,
+      "metrics/mAP50(B)": 0.54336,
+      "metrics/mAP50-95(B)": 0.27077,
+      "lr/pg0": 0.000841835
+    },
+    {
+      "epoch": 7,
+      "train/box_loss": 1.67442,
+      "train/cls_loss": 1.607,
+      "train/dfl_loss": 1.54591,
+      "val/box_loss": 1.1868,
+      "val/cls_loss": 2.42791,
+      "val/dfl_loss": 1.07081,
+      "metrics/precision(B)": 0.59168,
+      "metrics/recall(B)": 0.54628,
+      "metrics/mAP50(B)": 0.57921,
+      "metrics/mAP50-95(B)": 0.29903,
+      "lr/pg0": 0.000676802
+    },
+    {
+      "epoch": 8,
+      "train/box_loss": 1.63748,
+      "train/cls_loss": 1.53643,
+      "train/dfl_loss": 1.51247,
+      "val/box_loss": 1.18288,
+      "val/cls_loss": 2.25097,
+      "val/dfl_loss": 1.05667,
+      "metrics/precision(B)": 0.62568,
+      "metrics/recall(B)": 0.5397,
+      "metrics/mAP50(B)": 0.58936,
+      "metrics/mAP50-95(B)": 0.31705,
+      "lr/pg0": 0.000511769
+    },
+    {
+      "epoch": 9,
+      "train/box_loss": 1.5871,
+      "train/cls_loss": 1.45472,
+      "train/dfl_loss": 1.47317,
+      "val/box_loss": 1.14438,
+      "val/cls_loss": 1.7669,
+      "val/dfl_loss": 1.03856,
+      "metrics/precision(B)": 0.66693,
+      "metrics/recall(B)": 0.55843,
+      "metrics/mAP50(B)": 0.62805,
+      "metrics/mAP50-95(B)": 0.33946,
+      "lr/pg0": 0.000346736
+    },
+    {
+      "epoch": 10,
+      "train/box_loss": 1.529,
+      "train/cls_loss": 1.34286,
+      "train/dfl_loss": 1.44064,
+      "val/box_loss": 1.12769,
+      "val/cls_loss": 1.79102,
+      "val/dfl_loss": 1.02365,
+      "metrics/precision(B)": 0.67301,
+      "metrics/recall(B)": 0.58824,
+      "metrics/mAP50(B)": 0.65285,
+      "metrics/mAP50-95(B)": 0.35464,
+      "lr/pg0": 0.000181703
+    }
+  ],
+  "artifacts": {
+    "weights": {
+      "best.pt": {
+        "path": "models/batch1_e10_full_20261028_130129_best.pt",
+        "bytes": 6479146
+      },
+      "last.pt": {
+        "path": "models/batch1_e10_full_20261028_130129_last.pt",
+        "bytes": 6479146
+      }
+    },
+    "figures": [
+      {
+        "name": "results.png",
+        "path": "outputs/figures/batch1_e10_full_20261028_130129/results.png",
+        "bytes": 265883
+      },
+      {
+        "name": "results.csv",
+        "path": "outputs/figures/batch1_e10_full_20261028_130129/results.csv",
+        "bytes": 1433
+      },
+      {
+        "name": "confusion_matrix.png",
+        "path": "outputs/figures/batch1_e10_full_20261028_130129/confusion_matrix.png",
+        "bytes": 102762
+      },
+      {
+        "name": "confusion_matrix_normalized.png",
+        "path": "outputs/figures/batch1_e10_full_20261028_130129/confusion_matrix_normalized.png",
+        "bytes": 103138
+      },
+      {
+        "name": "labels.jpg",
+        "path": "outputs/figures/batch1_e10_full_20261028_130129/labels.jpg",
+        "bytes": 127402
+      },
+      {
+        "name": "train_batch0.jpg",
+        "path": "outputs/figures/batch1_e10_full_20261028_130129/train_batch0.jpg",
+        "bytes": 293380
+      },
+      {
+        "name": "val_batch0_labels.jpg",
+        "path": "outputs/figures/batch1_e10_full_20261028_130129/val_batch0_labels.jpg",
+        "bytes": 295935
+      },
+      {
+        "name": "val_batch0_pred.jpg",
+        "path": "outputs/figures/batch1_e10_full_20261028_130129/val_batch0_pred.jpg",
+        "bytes": 292314
+      }
+    ]
+  },
+  "disclaimer": "模型的识别结果仅供辅助分析，需人工核实；本系统不做森林火灾预警，也不能仅凭检测结果确认真实火灾。"
+}
