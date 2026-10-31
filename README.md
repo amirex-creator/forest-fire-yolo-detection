@@ -396,4 +396,4 @@ FOREST_SMOKE_DEVICE=cpu
 FOREST_SMOKE_MODEL=models/hardneg_finetune_cont30_full_20261029_034435_best.pt
 ```
 
-公网模式的上传和结果目录为 `outputs/predictions/public/`，默认保留 24 小时后清理。不要上传个人隐私或敏感图片，也不要把 Cloudflare 凭证提交到 GitHub。当前工作区没有 Docker、cloudflared 或 GitHub CLI，因此尚未完成实际公网发布；配置文件和启动脚本已经准备好。
+公网模式的上传和结果目录为 `outputs/predictions/public/`，默认保留 24 小时后清理。不要上传个人隐私或敏感图片，也不要把 Cloudflare 凭证提交到 GitHub。GitHub 仓库已经公开并核对完整；当前仍没有可用的公网检测网址，因为本机网络禁止 `cloudflared` 连接 Cloudflare 边缘。配置文件和启动脚本已经准备好，具体错误和处理方式见 `docs/deployment_github_cloudflare.md`。
