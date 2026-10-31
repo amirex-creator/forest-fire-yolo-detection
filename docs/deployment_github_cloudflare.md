@@ -66,11 +66,18 @@ docker run --rm -p 8501:8501 forest-smoke-web
 
 服务器上可以让 Cloudflare Tunnel 指向 `http://127.0.0.1:8501`。CPU 推理速度取决于服务器配置；视频检测会占用更多 CPU、内存和磁盘，应限制演示视频长度。
 
-Docker 当前未安装。官方 `cloudflared` 已下载到工作区外的 `E:\forest_smoke\tools\cloudflared.exe` 并验证版本；但本机网络策略禁止它直接连接 Cloudflare 边缘，因此本次未取得真实 `trycloudflare.com` 地址。安装工具并允许 Cloudflare 出站连接后，再执行实际 Tunnel 部署。
+Docker 当前未安装。官方 `cloudflared` 已下载到 `E:\forest_smoke\tools\cloudflared.exe` 并验证版本；实际运行 Quick Tunnel 时，当前网络返回
+`dial tcp 198.18.0.57:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions.`
+因此本次未取得真实 `trycloudflare.com` 地址。允许 Cloudflare 出站连接后，再运行 `start_cloudflare_tunnel.bat`。
 
 ## 5. GitHub 仓库
 
-GitHub 公共仓库已经创建：`https://github.com/amirex-creator/forest-fire-yolo-detection`。本地提交已完成，当前提交为 `133d719`；如果命令行凭证可用，在项目根目录运行：
+GitHub 公共仓库已经创建并已上传完整项目：
+`https://github.com/amirex-creator/forest-fire-yolo-detection`。
+仓库网页已核对 `main` 分支、README、代码、两个演示模型、报告、图表、PPT 和启动脚本均存在。
+远程 `main` 当前为网页上传生成的提交；本地修复提交为 `658c946`。由于本次通过 GitHub 网页分目录上传，远程与本地 Git 历史不是同一条提交链，不要直接运行 `git push` 覆盖远程。
+
+以后如果要继续用命令行同步新的本地提交，在确认远程内容已备份后再运行：
 
 ```powershell
 git init -b main
@@ -80,10 +87,6 @@ git commit -m "prepare forest fire detection web deployment"
 git remote add origin https://github.com/<用户名>/<仓库名>.git
 git push -u origin main
 ```
-
-本次机器环境的 Git 凭证存储不可用，且自动化浏览器授权被网络审核拦截，因此仓库创建后仍需在有 GitHub 凭证的终端执行一次上面的推送命令。推送成功后，仓库页面会显示完整代码和模型。
-
-也可以双击项目根目录的 `push_to_github.bat`。它会在可见窗口中运行推送，避免命令静默等待认证；认证完成后重新运行即可。
 
 推送前确认 `git status --short` 中没有数据集、虚拟环境、便携版、Cloudflare 凭证或个人文件。两个演示模型允许直接进入仓库；更多模型建议放到 GitHub Release 或模型仓库。
 
