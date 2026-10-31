@@ -1,0 +1,685 @@
+{
+  "schema_version": "1.0",
+  "stage": "阶段八：模型评价与实验对比",
+  "generated_at": "2026-10-29T04:29:43+08:00",
+  "started_at": "2026-10-29T04:28:30+08:00",
+  "seconds_total": 73.06,
+  "weights": {
+    "path": "E:\\forest_smoke\\models\\hardneg_finetune_cont30_full_20261029_034435_best.pt",
+    "name": "hardneg_finetune_cont30_full_20261029_034435_best.pt",
+    "bytes": 6480170,
+    "mtime": "2026-10-29T04:20:40",
+    "sha256": "6c959cfd4ef8309d07c1ee311ec6e5488817a8827d66a5615f8c370077f64159"
+  },
+  "dataset": {
+    "name": "D-Fire（Kaggle 镜像 sayedgamal99/smoke-fire-detection-yolo）",
+    "split": "test",
+    "images": 3229,
+    "objects": 3878,
+    "empty_label_images": 1645,
+    "objects_per_class": {
+      "smoke": 1688,
+      "fire": 2190
+    },
+    "split_method": "按近似分组 70/15/15（seed=42）；原始视频 ID 已被抹除，分组为近似分组"
+  },
+  "config": {
+    "imgsz": 640,
+    "batch": 8,
+    "device": "0",
+    "map_conf": 0.001,
+    "map_iou": 0.7,
+    "error_conf": 0.3,
+    "match_iou": 0.5,
+    "workers": 0
+  },
+  "overall": {
+    "precision": 0.7027,
+    "recall": 0.6346,
+    "map50": 0.6909,
+    "map50_95": 0.3738,
+    "f1": 0.6669
+  },
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "smoke",
+      "instances": 1688,
+      "precision": 0.7671,
+      "recall": 0.7103,
+      "map50": 0.7651,
+      "map50_95": 0.4561
+    },
+    {
+      "class_id": 1,
+      "class_name": "fire",
+      "instances": 2190,
+      "precision": 0.6382,
+      "recall": 0.5589,
+      "map50": 0.6166,
+      "map50_95": 0.2915
+    }
+  ],
+  "speed_ms_per_image": {
+    "preprocess": 0.166,
+    "inference": 2.248,
+    "loss": 0.001,
+    "postprocess": 0.669
+  },
+  "val_seconds": 32.18,
+  "error_cases": {
+    "iou_threshold": 0.5,
+    "conf_threshold": 0.3,
+    "true_positives": 2296,
+    "false_positives": 943,
+    "false_negatives": 1582,
+    "fn_per_class": {
+      "fire": 1039,
+      "smoke": 543
+    },
+    "fp_per_class": {
+      "fire": 579,
+      "smoke": 364
+    },
+    "images_with_fp": 654,
+    "images_with_fn": 841,
+    "images_scanned": 3229,
+    "saved_fn": [
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\missed\\AoF04054__missed.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\missed\\AoF04055__missed.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\missed\\AoF04440__missed.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\missed\\AoF04489__missed.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\missed\\AoF04605__missed.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\missed\\AoF05097__missed.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\missed\\AoF05801__missed.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\missed\\AoF05919__missed.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\missed\\AoF05920__missed.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\missed\\AoF05922__missed.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\missed\\AoF05923__missed.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\missed\\AoF05924__missed.jpg"
+    ],
+    "saved_fp": [
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\false_alarm\\AoF00319__false_alarm.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\false_alarm\\AoF00321__false_alarm.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\false_alarm\\AoF00322__false_alarm.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\false_alarm\\AoF01134__false_alarm.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\false_alarm\\AoF02349__false_alarm.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\false_alarm\\AoF02350__false_alarm.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\false_alarm\\AoF02352__false_alarm.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\false_alarm\\AoF02815__false_alarm.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\false_alarm\\AoF02997__false_alarm.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\false_alarm\\AoF03090__false_alarm.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\false_alarm\\AoF03091__false_alarm.jpg",
+      "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905\\false_alarm\\AoF03092__false_alarm.jpg"
+    ],
+    "seconds": 36.45
+  },
+  "error_case_details": {
+    "dir": "E:\\forest_smoke\\outputs\\predictions\\error_cases_20261029_042905",
+    "missed_examples": [
+      {
+        "image": "WEB03881.jpg",
+        "class_id": 1,
+        "class_name": "fire",
+        "gt_box_xyxy": [
+          3.0,
+          4.0,
+          480.0,
+          306.0
+        ],
+        "area_norm": 0.958124,
+        "predictions_in_image": 0
+      },
+      {
+        "image": "WEB05732.jpg",
+        "class_id": 1,
+        "class_name": "fire",
+        "gt_box_xyxy": [
+          11.0,
+          7.0,
+          799.0,
+          504.0
+        ],
+        "area_norm": 0.895373,
+        "predictions_in_image": 3
+      },
+      {
+        "image": "WEB11571.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "gt_box_xyxy": [
+          8.0,
+          19.0,
+          355.0,
+          347.0
+        ],
+        "area_norm": 0.87821,
+        "predictions_in_image": 0
+      },
+      {
+        "image": "WEB08423.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "gt_box_xyxy": [
+          11.0,
+          7.0,
+          591.0,
+          355.0
+        ],
+        "area_norm": 0.876042,
+        "predictions_in_image": 0
+      },
+      {
+        "image": "WEB07003.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "gt_box_xyxy": [
+          4.0,
+          4.0,
+          1272.0,
+          586.0
+        ],
+        "area_norm": 0.800755,
+        "predictions_in_image": 3
+      },
+      {
+        "image": "WEB10723.jpg",
+        "class_id": 1,
+        "class_name": "fire",
+        "gt_box_xyxy": [
+          5.0,
+          3.0,
+          195.0,
+          281.0
+        ],
+        "area_norm": 0.741021,
+        "predictions_in_image": 3
+      },
+      {
+        "image": "WEB04562.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "gt_box_xyxy": [
+          22.0,
+          6.0,
+          948.0,
+          533.0
+        ],
+        "area_norm": 0.736122,
+        "predictions_in_image": 1
+      },
+      {
+        "image": "WEB10613.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "gt_box_xyxy": [
+          13.0,
+          6.0,
+          537.0,
+          330.0
+        ],
+        "area_norm": 0.71978,
+        "predictions_in_image": 4
+      },
+      {
+        "image": "WEB07901.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "gt_box_xyxy": [
+          10.0,
+          6.0,
+          578.0,
+          296.0
+        ],
+        "area_norm": 0.714931,
+        "predictions_in_image": 0
+      },
+      {
+        "image": "WEB04307.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "gt_box_xyxy": [
+          6.0,
+          27.0,
+          767.0,
+          421.0
+        ],
+        "area_norm": 0.699246,
+        "predictions_in_image": 1
+      },
+      {
+        "image": "WEB09084.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "gt_box_xyxy": [
+          11.0,
+          6.0,
+          177.0,
+          283.0
+        ],
+        "area_norm": 0.655313,
+        "predictions_in_image": 0
+      },
+      {
+        "image": "WEB08923.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "gt_box_xyxy": [
+          61.0,
+          4.0,
+          197.0,
+          350.0
+        ],
+        "area_norm": 0.647085,
+        "predictions_in_image": 2
+      },
+      {
+        "image": "WEB04796.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "gt_box_xyxy": [
+          75.0,
+          15.0,
+          1026.0,
+          512.0
+        ],
+        "area_norm": 0.643102,
+        "predictions_in_image": 5
+      },
+      {
+        "image": "WEB05751.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "gt_box_xyxy": [
+          4.0,
+          8.0,
+          769.0,
+          265.0
+        ],
+        "area_norm": 0.575474,
+        "predictions_in_image": 2
+      },
+      {
+        "image": "WEB04994.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "gt_box_xyxy": [
+          11.0,
+          8.0,
+          561.0,
+          248.0
+        ],
+        "area_norm": 0.572917,
+        "predictions_in_image": 6
+      },
+      {
+        "image": "WEB11371.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "gt_box_xyxy": [
+          12.0,
+          11.0,
+          542.0,
+          474.0
+        ],
+        "area_norm": 0.568206,
+        "predictions_in_image": 3
+      },
+      {
+        "image": "AoF04605.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "gt_box_xyxy": [
+          118.0,
+          99.0,
+          634.0,
+          347.0
+        ],
+        "area_norm": 0.56804,
+        "predictions_in_image": 0
+      },
+      {
+        "image": "WEB04692.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "gt_box_xyxy": [
+          10.0,
+          5.0,
+          631.0,
+          213.0
+        ],
+        "area_norm": 0.560625,
+        "predictions_in_image": 3
+      },
+      {
+        "image": "WEB04760.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "gt_box_xyxy": [
+          196.0,
+          10.0,
+          1161.0,
+          536.0
+        ],
+        "area_norm": 0.55077,
+        "predictions_in_image": 3
+      },
+      {
+        "image": "WEB04753.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "gt_box_xyxy": [
+          40.0,
+          44.0,
+          637.0,
+          256.0
+        ],
+        "area_norm": 0.549323,
+        "predictions_in_image": 3
+      }
+    ],
+    "false_alarm_examples": [
+      {
+        "image": "WEB05808.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "confidence": 0.8325,
+        "pred_box_xyxy": [
+          1.0,
+          0.0,
+          640.0,
+          350.4
+        ],
+        "best_iou_with_gt": 0.0115,
+        "gt_count_in_image": 2
+      },
+      {
+        "image": "WEB07755.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "confidence": 0.8323,
+        "pred_box_xyxy": [
+          2.0,
+          5.7,
+          706.5,
+          221.0
+        ],
+        "best_iou_with_gt": 0.477,
+        "gt_count_in_image": 1
+      },
+      {
+        "image": "WEB05732.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "confidence": 0.8231,
+        "pred_box_xyxy": [
+          0.0,
+          5.7,
+          809.3,
+          491.9
+        ],
+        "best_iou_with_gt": 0.9481,
+        "gt_count_in_image": 3
+      },
+      {
+        "image": "WEB06129.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "confidence": 0.8171,
+        "pred_box_xyxy": [
+          1.0,
+          1.0,
+          428.1,
+          427.3
+        ],
+        "best_iou_with_gt": 0.3158,
+        "gt_count_in_image": 1
+      },
+      {
+        "image": "WEB09359.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "confidence": 0.8155,
+        "pred_box_xyxy": [
+          0.3,
+          3.4,
+          389.9,
+          187.9
+        ],
+        "best_iou_with_gt": 0.4697,
+        "gt_count_in_image": 1
+      },
+      {
+        "image": "WEB05247.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "confidence": 0.8077,
+        "pred_box_xyxy": [
+          410.8,
+          4.6,
+          639.8,
+          140.4
+        ],
+        "best_iou_with_gt": 0.2391,
+        "gt_count_in_image": 8
+      },
+      {
+        "image": "WEB07350.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "confidence": 0.8067,
+        "pred_box_xyxy": [
+          28.5,
+          9.8,
+          690.7,
+          367.6
+        ],
+        "best_iou_with_gt": 0.3419,
+        "gt_count_in_image": 1
+      },
+      {
+        "image": "WEB05672.jpg",
+        "class_id": 1,
+        "class_name": "fire",
+        "confidence": 0.8065,
+        "pred_box_xyxy": [
+          17.1,
+          283.6,
+          590.9,
+          496.3
+        ],
+        "best_iou_with_gt": 0.4629,
+        "gt_count_in_image": 4
+      },
+      {
+        "image": "WEB04604.jpg",
+        "class_id": 1,
+        "class_name": "fire",
+        "confidence": 0.7919,
+        "pred_box_xyxy": [
+          103.1,
+          69.7,
+          281.1,
+          354.3
+        ],
+        "best_iou_with_gt": 0.2341,
+        "gt_count_in_image": 1
+      },
+      {
+        "image": "WEB09405.jpg",
+        "class_id": 1,
+        "class_name": "fire",
+        "confidence": 0.791,
+        "pred_box_xyxy": [
+          71.2,
+          427.3,
+          176.8,
+          480.5
+        ],
+        "best_iou_with_gt": 0.0,
+        "gt_count_in_image": 1
+      },
+      {
+        "image": "WEB04332.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "confidence": 0.79,
+        "pred_box_xyxy": [
+          0.0,
+          0.4,
+          779.8,
+          505.7
+        ],
+        "best_iou_with_gt": 0.4658,
+        "gt_count_in_image": 6
+      },
+      {
+        "image": "AoF03310.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "confidence": 0.7859,
+        "pred_box_xyxy": [
+          961.3,
+          43.3,
+          1164.3,
+          165.5
+        ],
+        "best_iou_with_gt": 0.0,
+        "gt_count_in_image": 0
+      },
+      {
+        "image": "WEB04713.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "confidence": 0.7852,
+        "pred_box_xyxy": [
+          107.1,
+          5.7,
+          315.0,
+          180.1
+        ],
+        "best_iou_with_gt": 0.2839,
+        "gt_count_in_image": 3
+      },
+      {
+        "image": "WEB03796.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "confidence": 0.7847,
+        "pred_box_xyxy": [
+          637.2,
+          6.2,
+          816.6,
+          282.6
+        ],
+        "best_iou_with_gt": 0.2061,
+        "gt_count_in_image": 5
+      },
+      {
+        "image": "WEB05576.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "confidence": 0.7839,
+        "pred_box_xyxy": [
+          8.1,
+          15.1,
+          1918.3,
+          676.4
+        ],
+        "best_iou_with_gt": 0.2743,
+        "gt_count_in_image": 7
+      },
+      {
+        "image": "WEB10797.jpg",
+        "class_id": 1,
+        "class_name": "fire",
+        "confidence": 0.7796,
+        "pred_box_xyxy": [
+          479.2,
+          108.7,
+          570.1,
+          155.2
+        ],
+        "best_iou_with_gt": 0.4249,
+        "gt_count_in_image": 7
+      },
+      {
+        "image": "WEB04467.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "confidence": 0.7775,
+        "pred_box_xyxy": [
+          0.0,
+          26.5,
+          1024.0,
+          420.1
+        ],
+        "best_iou_with_gt": 0.4602,
+        "gt_count_in_image": 1
+      },
+      {
+        "image": "WEB09142.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "confidence": 0.7749,
+        "pred_box_xyxy": [
+          133.7,
+          0.0,
+          911.2,
+          468.1
+        ],
+        "best_iou_with_gt": 0.1182,
+        "gt_count_in_image": 1
+      },
+      {
+        "image": "WEB08037.jpg",
+        "class_id": 0,
+        "class_name": "smoke",
+        "confidence": 0.7746,
+        "pred_box_xyxy": [
+          207.1,
+          113.7,
+          344.2,
+          245.6
+        ],
+        "best_iou_with_gt": 0.4246,
+        "gt_count_in_image": 1
+      },
+      {
+        "image": "WEB04263.jpg",
+        "class_id": 1,
+        "class_name": "fire",
+        "confidence": 0.7745,
+        "pred_box_xyxy": [
+          552.2,
+          206.2,
+          698.9,
+          354.9
+        ],
+        "best_iou_with_gt": 0.2649,
+        "gt_count_in_image": 4
+      }
+    ]
+  },
+  "figures": [
+    "outputs\\figures\\evaluation_hardneg_40epoch_cases\\BoxF1_curve.png",
+    "outputs\\figures\\evaluation_hardneg_40epoch_cases\\BoxP_curve.png",
+    "outputs\\figures\\evaluation_hardneg_40epoch_cases\\BoxPR_curve.png",
+    "outputs\\figures\\evaluation_hardneg_40epoch_cases\\BoxR_curve.png",
+    "outputs\\figures\\evaluation_hardneg_40epoch_cases\\confusion_matrix.png",
+    "outputs\\figures\\evaluation_hardneg_40epoch_cases\\confusion_matrix_normalized.png",
+    "outputs\\figures\\evaluation_hardneg_40epoch_cases\\pr_curve.png",
+    "outputs\\figures\\evaluation_hardneg_40epoch_cases\\metrics_by_class.png",
+    "outputs\\figures\\evaluation_hardneg_40epoch_cases\\error_cases_missed.png",
+    "outputs\\figures\\evaluation_hardneg_40epoch_cases\\error_cases_false_alarm.png"
+  ],
+  "limitations": [
+    "数据划分是按感知哈希近似分组，不是真实视频/事件分组，指标可能偏乐观。",
+    "跨集合仍存在少量近似重复图片（阶段五统计：19 组），会抬高测试集指标。",
+    "数据集不是纯森林场景（含城市、工业、夜间监控画面），不能宣称“森林专用模型”。",
+    "test 集只在本次评价中使用一次；本文件中所有指标都来自这一次运行。",
+    "错误案例分析使用的是 conf=0.25 的固定阈值，mAP 使用的是 conf=0.001 积分，两者不可混用。",
+    "test 集标注共 3,878 条，其中含极少量退化/越界框（全数据集共 26 条），本次未逐条剔除。"
+  ],
+  "disclaimer": "模型识别结果仅供辅助分析，需人工核实；本系统不做森林火灾预警，不能仅凭检测结果确认真实火灾。"
+}
