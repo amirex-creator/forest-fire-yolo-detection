@@ -1,0 +1,57 @@
+# ============================================================================
+# 森林烟雾目标检测项目 依赖清单
+# 目标环境：Windows 10 + Python 3.11.9 + RTX 3060 Laptop (6GB) + 驱动 566.07
+# 版本依据：docs/compatibility_final.md（已核实的官方组合）
+# 实测记录：docs/environment_verification_stage4.md（2026-10-27 本机安装并验证通过）
+# ============================================================================
+#
+# ⚠️ 重要：PyTorch 必须【单独一步】安装，且走官方 cu126 索引。
+#    不要用 `pip install -r requirements.txt` 一次性装完，否则 pip 会去
+#    PyPI 找 torch，装成 CPU 版（或直接失败）。
+#
+#    第 1 步（PyTorch，实测下载 2,594.5 MB）：
+#      python -m pip install torch==2.13.0 torchvision==0.28.0 ^
+#          --index-url https://download.pytorch.org/whl/cu126
+#
+#    第 2 步（其余依赖，本机用阿里云镜像，退出码 0）：
+#      python -m pip install ultralytics==8.4.190 "opencv-python==4.14.0.94" ^
+#          pandas matplotlib streamlit pyyaml tqdm pytest psutil ^
+#          -i https://mirrors.aliyun.com/pypi/simple/
+#
+# ⚠️ 本机清华源（pypi.tuna.tsinghua.edu.cn）SSL 握手失败，禁止使用。
+# ⚠️ 下面除 PyTorch 外的版本号是【本机实测安装到的版本】，不是凭空指定；
+#    如换机器重装时 pip 解析出更高版本，请重新跑 src/env_check.py 验证。
+# ============================================================================
+
+# ---------- 深度学习框架（第 1 步单独安装，索引见上）----------
+torch==2.13.0
+torchvision==0.28.0
+
+# ---------- 检测框架 ----------
+# 8.4.190 声明依赖 torch>=1.8.0（Windows 排除 2.4.0），实测与 2.13.0+cu126 共存正常
+ultralytics==8.4.190
+
+# ---------- 图像处理 ----------
+# 锁 4.x 末版：Ultralytics 要求 >=4.7.0,!=4.13.0.90；实测 4.14.0.94 可用（opencv 4.14.0）
+opencv-python==4.14.0.94
+
+# ---------- 数值与数据处理 ----------
+# numpy 2.4.6 是本机系统 Python 也装着的版本，torch/torchvision/opencv 均与之兼容（实测）
+numpy==2.4.6
+pillow==12.3.0
+pandas==3.1.0
+
+# ---------- 绘图 ----------
+matplotlib==3.11.2
+
+# ---------- 网页界面 ----------
+# streamlit 1.66.1 要求 Python >= 3.11，因此本项目的 Python 不能降级
+streamlit==1.66.1
+
+# ---------- 配置与工具 ----------
+pyyaml==6.0.3
+tqdm==4.70.1
+psutil==7.2.2
+
+# ---------- 测试 ----------
+pytest==9.1.1

@@ -1,0 +1,87 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---------- 虚拟环境 ----------
+.venv/
+venv/
+env/
+
+# ---------- 数据集（体积大，禁止入库；目录结构靠 .gitkeep 保留）----------
+datasets/forest_smoke/images/**
+datasets/forest_smoke/labels/**
+# 原始下载包与解压目录（阶段三实际占用 3.0 GB + 3.1 GB，绝不能入库）
+datasets/_downloads/
+datasets/_cache/
+*.zip
+*.7z
+*.tar
+*.tar.gz
+
+# ---------- 模型权重（大文件，绝不入库）----------
+models/**
+*.pt
+*.pth
+*.onnx
+*.engine
+*.torchscript
+*.safetensors
+
+# 公网演示只保留经过确认的两个轻量模型（约 6.5 MB/个）。
+!models/
+!models/hardneg_finetune_cont30_full_20261029_034435_best.pt
+!models/batch1_e10_full_20261028_130129_best.pt
+
+# ---------- 训练 / 推理输出（大文件，绝不入库）----------
+# 预测图、图表、训练运行目录体积大且可再生成；但 outputs/reports/ 里的
+# JSON/Markdown 报告体积很小、是论文与复核的证据，因此单独放行。
+outputs/**
+!outputs/
+!outputs/reports/
+!outputs/reports/**
+!outputs/figures/
+!outputs/figures/**
+!outputs/screenshots/
+!outputs/screenshots/**
+!outputs/deliverables/
+!outputs/deliverables/*.pptx
+!outputs/deliverables/*.md
+runs/
+wandb/
+
+# ---------- 日志与临时文件 ----------
+*.log
+logs/
+*.tmp
+*.bak
+*.cache
+
+# ---------- 编辑器 / 系统 ----------
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- 不进入公开仓库的本地构建与凭证 ----------
+便携版/
+.env
+.env.*
+!.env.example
+.cloudflared/
+.forest_smoke_public_port
+
+# ---------- 保留空目录 ----------
+!**/.gitkeep
+
+# ---------- 本地构建草稿（临时目录）----------
+_stage2/
+_s3b/

@@ -1,0 +1,16 @@
+# CPU deployment dependencies for the Streamlit inference service.
+# This file is separate from requirements.txt, which targets local CUDA training.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+torch==2.14.1
+torchvision==0.29.1
+ultralytics==8.3.60
+opencv-python-headless==4.10.0.84
+numpy==2.4.6
+pillow==11.3.0
+pandas==2.2.3
+matplotlib==3.9.3
+streamlit==1.41.1
+PyYAML==6.0.2
+tqdm==4.70.1
+psutil==7.2.2

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>森林火灾烟雾与明火检测 · 项目查看页</title>
+  <style>
+    :root { --forest:#173b31; --forest2:#2d6a59; --ink:#192722; --muted:#68756f; --paper:#f4f6f3; --card:#fff; --line:#dce4de; --coral:#c85c47; --teal:#37877b; --gold:#b8862e; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--paper); font-family:"Microsoft YaHei", "Segoe UI", Arial, sans-serif; line-height:1.6; }
+    .hero { background:var(--forest); color:#fff; padding:48px max(24px, calc((100% - 1180px)/2)); }
+    .hero-inner { max-width:1180px; margin:auto; }
+    .eyebrow { color:#a8d1c1; font-size:13px; letter-spacing:.08em; text-transform:uppercase; font-weight:700; }
+    h1 { margin:10px 0 12px; max-width:780px; font-size:clamp(30px,5vw,54px); line-height:1.12; }
+    .hero p { max-width:760px; color:#d8e6df; margin:0; font-size:17px; }
+    .wrap { max-width:1180px; margin:0 auto; padding:30px 24px 60px; }
+    .notice { background:#fff8e8; border:1px solid #ead8a6; border-left:4px solid var(--gold); padding:15px 18px; margin-bottom:26px; }
+    .notice strong { color:#765615; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin:22px 0 30px; }
+    .button { display:inline-flex; align-items:center; justify-content:center; padding:11px 16px; border-radius:5px; background:var(--coral); color:#fff; text-decoration:none; font-weight:700; }
+    .button.secondary { background:var(--forest2); }
+    .button.light { background:#fff; color:var(--forest); border:1px solid var(--line); }
+    h2 { margin:36px 0 14px; font-size:26px; }
+    h3 { margin:0 0 8px; font-size:19px; }
+    .muted { color:var(--muted); }
+    .metrics { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+    .metric { background:var(--card); border:1px solid var(--line); border-top:4px solid var(--teal); padding:18px; min-height:120px; }
+    .metric:nth-child(2) { border-top-color:var(--coral); }
+    .metric:nth-child(3) { border-top-color:var(--gold); }
+    .metric:nth-child(4) { border-top-color:var(--forest2); }
+    .metric .value { font-size:32px; font-weight:800; line-height:1.1; }
+    .metric .label { color:var(--muted); margin-top:5px; }
+    .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+    .card { background:var(--card); border:1px solid var(--line); padding:20px; }
+    .card img { display:block; width:100%; height:auto; border:1px solid var(--line); background:#eef2ef; }
+    .card p { margin:8px 0 0; color:var(--muted); }
+    table { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); }
+    th, td { padding:11px 12px; text-align:left; border-bottom:1px solid var(--line); }
+    th { color:var(--forest); background:#e9f0eb; }
+    tr:last-child td { border-bottom:0; }
+    .tag { display:inline-block; padding:2px 8px; margin-right:5px; border-radius:12px; color:#fff; background:var(--teal); font-size:12px; }
+    .tag.coral { background:var(--coral); }
+    .tag.gold { background:var(--gold); }
+    .gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+    .gallery figure { margin:0; background:#fff; border:1px solid var(--line); padding:10px; }
+    .gallery figcaption { margin-top:8px; color:var(--muted); font-size:13px; }
+    details { background:#fff; border:1px solid var(--line); padding:14px 18px; margin-top:14px; }
+    summary { cursor:pointer; font-weight:700; color:var(--forest); }
+    code { background:#edf1ee; padding:2px 5px; border-radius:3px; }
+    pre { overflow:auto; background:#18251f; color:#e7f0eb; padding:15px; border-radius:4px; }
+    footer { max-width:1180px; margin:0 auto; padding:0 24px 35px; color:var(--muted); font-size:13px; }
+    @media (max-width:760px) { .metrics,.grid,.gallery { grid-template-columns:1fr; } .hero { padding:34px 20px; } .wrap { padding:22px 16px 44px; } th,td { padding:8px; font-size:13px; } }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">人工智能基础课程项目</div>
+      <h1>基于 YOLO 的森林火灾烟雾与明火检测</h1>
+      <p>复杂背景误检分析 · 真实训练结果 · 图片与视频检测系统</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="notice"><strong>最简单的查看方式：</strong>本页是离线网页，不需要 Python、VS Code、Streamlit 或网络。双击本文件即可查看项目成果。<br>提示：<code>http://localhost:8501</code> 只在启动它的那台电脑上有效，不是可发送给别人的公共网址。</div>
+
+    <div class="actions">
+      <a class="button" href="outputs/deliverables/森林火灾烟雾与明火检测_课程汇报_20261029_v3.pptx">打开汇报 PPTX</a>
+      <a class="button secondary" href="逐页讲稿_森林火灾检测_20261029_v3.html">查看逐页讲稿</a>
+      <a class="button light" href="outputs/screenshots/system_image_detection.png">查看系统截图</a>
+      <a class="button light" href="README.md">查看完整 README</a>
+    </div>
+
+    <h2>核心结果</h2>
+    <section class="metrics" aria-label="核心实验指标">
+      <div class="metric"><div class="value">0.6909</div><div class="label">测试集 mAP@0.5</div></div>
+      <div class="metric"><div class="value">0.3738</div><div class="label">测试集 mAP@0.5:0.95</div></div>
+      <div class="metric"><div class="value">0.7027</div><div class="label">Precision</div></div>
+      <div class="metric"><div class="value">5.41%</div><div class="label">空标签测试图误报率（89/1645）</div></div>
+    </section>
+
+    <h2>项目概况</h2>
+    <section class="grid">
+      <div class="card">
+        <h3>数据与模型</h3>
+        <p><span class="tag">YOLOv8n</span><span class="tag">smoke</span><span class="tag coral">fire</span></p>
+        <p>测试集 3,229 张图片、3,878 个目标框。训练集、验证集、测试集约按 70% / 15% / 15% 划分；数据是 D-Fire 野外/林区为主的公开数据，不是纯森林数据集。</p>
+      </div>
+      <div class="card">
+        <h3>实验设置</h3>
+        <p>最终模型累计 40 轮困难负样本微调，输入尺寸 640，batch=8，使用 RTX 3060 Laptop 6GB 和 AMP。验证集标定置信度阈值为 0.30。</p>
+      </div>
+    </section>
+
+    <h2>实验对比</h2>
+    <table>
+      <thead><tr><th>模型</th><th>轮数</th><th>mAP@0.5</th><th>mAP@0.5:0.95</th><th>Precision</th><th>Recall</th><th>空标签图误报率</th></tr></thead>
+      <tbody>
+        <tr><td>10 轮基线</td><td>10</td><td>0.6007</td><td>0.3140</td><td>0.6288</td><td>0.5558</td><td>8.15%</td></tr>
+        <tr><td>30 轮基线</td><td>30</td><td>0.6543</td><td>0.3536</td><td>0.6614</td><td>0.5918</td><td>8.81%</td></tr>
+        <tr><td>困难负样本首轮微调</td><td>10</td><td>0.6791</td><td>0.3708</td><td>0.6758</td><td>0.6274</td><td>4.62%</td></tr>
+        <tr><td><strong>困难负样本微调</strong></td><td><strong>40</strong></td><td><strong>0.6909</strong></td><td><strong>0.3738</strong></td><td><strong>0.7027</strong></td><td><strong>0.6346</strong></td><td><strong>5.41%</strong></td></tr>
+      </tbody>
+    </table>
+
+    <h2>误检与漏检案例</h2>
+    <section class="grid">
+      <div class="card">
+        <h3><span class="tag coral">误报</span>高亮结构被识别为烟雾</h3>
+        <img src="outputs/figures/case_review/false_alarm_hardneg_final.jpg" alt="空标签测试图上的 smoke 误报案例">
+        <p>空标签测试图中，模型在高亮、低纹理区域输出 smoke 框，置信度约 0.786。</p>
+      </div>
+      <div class="card">
+        <h3><span class="tag gold">漏检</span>夜间小火点未正确匹配</h3>
+        <img src="outputs/figures/case_review/AoF04054__missed.jpg" alt="夜间小火点漏检案例">
+        <p>低照度和小目标共同降低定位稳定性；图中同时保留真实标注和漏检框。</p>
+      </div>
+    </section>
+
+    <h2>真实图表</h2>
+    <section class="gallery">
+      <figure><img src="outputs/figures/dataset_inspect/samples_test.png" alt="测试集抽样图"><figcaption>测试集抽样与真实标注</figcaption></figure>
+      <figure><img src="outputs/figures/dataset_inspect/class_distribution.png" alt="类别分布图"><figcaption>数据集类别分布</figcaption></figure>
+      <figure><img src="outputs/figures/evaluation_hardneg_40epoch_cases/confusion_matrix_normalized.png" alt="归一化混淆矩阵"><figcaption>归一化混淆矩阵</figcaption></figure>
+      <figure><img src="outputs/figures/evaluation_hardneg_40epoch_cases/pr_curve.png" alt="PR 曲线"><figcaption>PR 曲线</figcaption></figure>
+      <figure><img src="outputs/figures/evaluation_hardneg_40epoch_cases/metrics_by_class.png" alt="分类别指标"><figcaption>分类别指标</figcaption></figure>
+      <figure><img src="outputs/figures/evaluation_hardneg_40epoch_cases/error_cases_false_alarm.png" alt="误报案例统计"><figcaption>误报案例统计图</figcaption></figure>
+    </section>
+
+    <h2>系统与文件</h2>
+    <section class="grid">
+      <div class="card"><h3>系统截图</h3><img src="outputs/screenshots/system_image_detection.png" alt="Streamlit 系统截图"><p>系统支持图片检测、视频逐帧检测、模型对比和误检案例查看。该截图来自实际运行页面。</p></div>
+      <div class="card"><h3>主要文件</h3><p><a href="models/hardneg_finetune_cont30_full_20261029_034435_best.pt">最终 40 轮模型权重</a></p><p><a href="models/batch1_e10_full_20261028_130129_best.pt">10 轮基线模型权重</a></p><p><a href="outputs/reports/metrics.md">最终评价报告</a></p><p><a href="data/数据准备说明.md">数据准备说明</a></p><p><a href="app.py">系统源代码 app.py</a></p></div>
+    </section>
+
+    <details>
+      <summary>如果需要运行交互式检测系统</summary>
+      <p>静态查看页不需要安装任何东西。只有要运行图片/视频检测时，才需要在项目目录建立 Python 环境并安装 README 中的依赖。安装完成后运行：</p>
+      <pre>venv\Scripts\python.exe -m streamlit run app.py</pre>
+      <p>然后只在运行系统的那台电脑上访问 <code>http://localhost:8501</code>。其他电脑不能直接访问这个地址。</p>
+    </details>
+
+    <details>
+      <summary>项目局限</summary>
+      <p>数据集包含野外、城市和工业等场景；原始视频编号缺失，划分采用感知哈希近似分组；视频系统逐帧检测，没有时序建模；模型输出只能作为课程演示和人工辅助查看，不能作为真实火灾报警依据。</p>
+    </details>
+  </main>
+  <footer>课程项目 · 所有数值和图片来自本项目实际训练、评估和系统运行结果。</footer>
+</body>
+</html>
